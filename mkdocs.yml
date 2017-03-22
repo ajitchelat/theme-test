@@ -5,7 +5,7 @@ markdown_extensions:
  - admonition
 
 extra_css:
-- css/theme_extra.css
+- css/extra.css
 
 extra_javascript:
 - js/extra.js
