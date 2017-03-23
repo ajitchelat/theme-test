@@ -3,6 +3,9 @@ site_description: Documentation for Azure RemoteApp
 theme_dir: theme
 markdown_extensions:
  - admonition
+ 
+extra:
+   disqus: citrix-github-io
 
 extra_css:
 - css/extra.css
