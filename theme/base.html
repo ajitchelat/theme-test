@@ -68,7 +68,7 @@ https://www.citrix.com/etc/designs/citrix/icon-favicon.png">{% endif %}
 			<!--	<li class="list-inline home"><a href="{{ homepage_url }}">HOME</a></li>
 				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
 				<form id ="rtd-search-form" class="wy-form" action="{{ base_url }}/search.html" method="get">
-            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs"
             class="searchdocs">
 <a class="fa fa-search errspan"></a></li>
 </form>
@@ -109,7 +109,7 @@ https://www.citrix.com/etc/designs/citrix/icon-favicon.png">{% endif %}
              {% block content %}
                 {{ content }}
               {% endblock %}
-               
+
             </div>
           </div>
 
@@ -121,7 +121,27 @@ https://www.citrix.com/etc/designs/citrix/icon-favicon.png">{% endif %}
   </div>
 
 <!--{% include "versions.html" %}-->
+<div id="disqus_thread"></div>
+<script>
 
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://citrix-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
 </body>
 </html>
 {% if current_page and current_page.is_homepage %}
