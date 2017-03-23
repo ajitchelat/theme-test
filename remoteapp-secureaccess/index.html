@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Secure Data - Azure RemoteApp</title>
+  
+
+  <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="../css/override.css" type="text/css" />
+  <link href="../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Secure Data";
+    var mkdocs_page_input_path = "remoteapp-secureaccess.md";
+    var mkdocs_page_url = "/remoteapp-secureaccess/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="../js/extra.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+	<div class="header-top">
+		<div class="header-top-left">
+			<a href="http://www.citrix.com" class="logo-position"><img height="60" src="https://thumbnail-ec2.sharefile.com/thumbnail.aspx?encparams=ypL2J0l-In6gqXJ7yeyKP8A1rqwKMH-C8-nfkJcHJNIN7Y0yZiJsYOcUe-uc0YeZzWLQSFSd1FnuMHPa30XSSINHuGOA8nvvnBT5WmjGlKvd5mxJ4IfT7iTVyHELwhWQiNCznPCiIFyhkA78uKX77PlU2iyhM4YdRM1NKabBe-4wXuiFJsbtAxyJ2UukO_E2ZSf1W3l75Dw8G0zflVkT-EFqyx1zSGId0qzLjm6nzJ8dA9zo-1AJzUisdzmGMzHOq_LMsOWyaalvmcWvCkl-q10GBSbfekfTIFW9LpZNYjkLNSnK8rcwNjWVr_jYayrGjIj2e5dDIMiDj3NRvW51AvHRjxYH9xRRRtY$" target="_blank" class="logo-citrix"><span style="color:#fff;font-size: 20px;position: relative;top:4px;left: 5px">SDK Reference</span></a>
+		</div>
+		<div class="header-top-right">
+			<ul>
+			<!--	<li class="list-inline home"><a href="..">HOME</a></li>
+				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
+				<form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
+            class="searchdocs">
+<a class="fa fa-search errspan"></a></li>
+</form>
+				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
+			</ul>
+
+		</div>
+	</div>
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<i class="fa fa-search"></i>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Overview</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-whatis/">What is Azure RemoteApp?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-licensing/">How does licensing work?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-faq/">FAQ</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-whatsnew/">What's new?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-roadmap/">What's coming?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../azure-subscription-service-limits/">Azure service limits</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Real world scenarios</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-anyapp/">Run any app on any device</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-tutorial-o365anywhere/">Run Office 365 on any device</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Will my app work?</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-appreqs/">App requirements</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-onedrive/">OneDrive for Business</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-sql/">SQL Azure</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-o365/">Office 365</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-outlook/">Outlook 2013</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-appv/">Using App-V apps</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-quickbooks/">QuickBooks on Azure RemoteApp</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-secure/">Secure apps and resources</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Create a RemoteApp collection</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-collections/">Which collection do you need?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-create-cloud-deployment/">Create a cloud collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-create-hybrid-deployment/">Create a hybrid collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-update/">Update your collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-imageoptions/">Create a RemoteApp image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-images/">What is in the template image?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-imagereqs/">Image requirements</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-uploadimage/">Upload an image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-image-on-azurevm/">Create an image from an Azure VM</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Configure a Virtual Network</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-planvnet/">Plan your VNET</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-ports/">Port and URL info</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-vnet/">Validate your VNET</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-migrate/">Migrate to an Azure VNET</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Publish applications</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-publish/">How to publish an app</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Manage Users</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-user/">How to add users</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-ad/">Configure Active Directory</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-changetenant/">Change the Azure AD tenant</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-o365user/">Office 365 user accounts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Secure Data</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#securing-access-to-azure-remoteapp-and-beyond">Securing access to Azure RemoteApp, and beyond</a></li>
+                
+                    <li><a class="toctree-l4" href="#who-can-access-the-collection">Who can access the collection?</a></li>
+                
+                    <li><a class="toctree-l4" href="#how-is-the-collection-accessed-from-where">How is the collection accessed? From where?</a></li>
+                
+                    <li><a class="toctree-l4" href="#how-do-i-make-sure-my-secure-resource-is-accessible-only-from-my-azure-remoteapp-environment">How do I make sure my secure resource is accessible only from my Azure RemoteApp environment?</a></li>
+                
+                    <li><a class="toctree-l4" href="#the-complete-solution">The complete solution</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-upd/">User data</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Client experience</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-clients/">Supported clients</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-redirection/">Configure redirection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-bestpractices/">Client best practices</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Automate RemoteApp</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-tutorial-arawithpowershell/">RemoteApp PowerShell cmdlets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../automation-manage-remote-app/">Manage RemoteApp with Azure Automation</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Troubleshoot</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-hybridtrouble/">Troubleshoot a hybrid collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-cloudtrouble/">Troubleshoot a cloud collection</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+         <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Manage Users &raquo;</li>
+        
+      
+    
+    <li>Secure Data</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main">
+            <div class="section">
+             
+                <p><properties 
+    pageTitle="Securing access to Azure RemoteApp, and beyond | Microsoft Azure"
+    description="Learn how secure access to Azure RemoteApp by using conditional access in Azure Active Directory"
+    services="remoteapp"
+    documentationCenter="" 
+    authors="piotrci" 
+    manager="mbaldwin" /></p>
+<p><tags 
+    ms.service="remoteapp" 
+    ms.workload="compute" 
+    ms.tgt_pltfrm="na" 
+    ms.devlang="na" 
+    ms.topic="article" 
+    ms.date="08/15/2016" 
+    ms.author="elizapo" /></p>
+<h1 id="securing-access-to-azure-remoteapp-and-beyond">Securing access to Azure RemoteApp, and beyond</h1>
+<blockquote>
+<p>[AZURE.IMPORTANT]
+Azure RemoteApp is being discontinued. Read the <a href="https://go.microsoft.com/fwlink/?linkid=821148">announcement</a> for details.</p>
+</blockquote>
+<p>In this article we will give an overview of how an administrator can set up a secure access channel starting from the end user, through Azure RemoteApp and ending with a secure resource such as a SQL database or another application back-end. The goal is to make sure that only authorized users meeting the desired conditions can access remote applications, and that the secure back-end can only be accessed from the controlled Azure RemoteApp environment and not from other locations.</p>
+<p>There are 3 major areas the admin needs to look at:</p>
+<p><img alt="Azure RemoteApp conditional access considerations" src="../media/remoteapp-secureaccess/ra-conditionalenvironment.png" /></p>
+<p>Read on for information and answers to these questions.</p>
+<h2 id="who-can-access-the-collection">Who can access the collection?</h2>
+<p>The administrator chooses the users that can access remote applications in the collection. You can use Azure Active Directory (Azure AD) work or school accounts (previously called, "organizational accounts") or Microsoft accounts (e.g. @outlook.com). Most enterprise scenarios use Azure AD accounts; they let you use conditional access features discussed later and are also the only choice for domain-joined collections. The rest of the article assumes you are using Azure AD accounts with Azure RemoteApp.</p>
+<p><strong>What we have accomplished:</strong></p>
+<p>Using Azure AD accounts to control access to Azure RemoteApp gives us two things:</p>
+<ol>
+<li>We always know who can access the applications we have published and access any back-ends those applications connect to.</li>
+<li>We control the underlying Azure AD so we can create and delete user accounts, set password policies, use multi-factor authentication, etc. </li>
+</ol>
+<h2 id="how-is-the-collection-accessed-from-where">How is the collection accessed? From where?</h2>
+<p>Commonly administrators want to define policies for accessing a public Internet-facing environment, such as Azure RemoteApp. For example, they want to ensure that users accessing the environment from outside of the corporate network have to use multi-factor authentication (MFA) to gain access; or perhaps they should be blocked altogether.</p>
+<p>Azure RemoteApp administrators can use the functionality available through Azure AD Premium to set conditional access policies for their Azure RemoteApp environment. They can also use rich reporting and alerting features to monitor how the environment is being accessed.</p>
+<h3 id="how-to-set-up-conditional-access-for-azure-remoteapp">How to set up conditional access for Azure RemoteApp</h3>
+<p>We are going to walk through an example scenario – the Azure RemoteApp administrator wants to block access to the environment when users are outside of the corporate network.</p>
+<blockquote>
+<p>[AZURE.NOTE] We assume you have upgraded Azure AD to the Premium tier and that you have created at least one Azure RemoteApp collection.</p>
+</blockquote>
+<ol>
+<li>
+<p>In Azure portal click the <strong>Active Directory</strong> tab. Then click the directory you want to configure.</p>
+<p>Remember: Conditional access is a property of your directory and not of Azure RemoteApp, so all configuration is done at the directory level. This also means you need to be the directory administrator to make these changes.</p>
+</li>
+<li>
+<p>Click <strong>Applications</strong>, and then click <strong>Microsoft Azure RemoteApp</strong> to set up conditional access. Note that you can set up conditional access for each “software as a service” application in your directory separately.
+<img alt="Setting up conditional access for Azure RemoteApp" src="../media/remoteapp-secureaccess/ra-conditionalaccessscreen.png" /></p>
+</li>
+<li>
+<p>On the <strong>Configure</strong> tab, set <strong>Enable Access Rules</strong> to ON.
+<img alt="Enable access rules for Azure RemoteApp" src="../media/remoteapp-secureaccess/ra-enableaccessrules.png" /></p>
+</li>
+<li>
+<p>You can now configure various rules and choose who to apply them to:</p>
+<ol>
+<li>Choose <strong>Block access when not at work</strong> to completely prevent users from accessing Azure RemoteApp outside of the network environment you specify.</li>
+<li>Click the option below to define the IP address ranges that constitute your “trusted network”. Everything outside of those will be rejected.</li>
+</ol>
+</li>
+<li>
+<p>Test your configuration by launching the Azure RemoteApp client from an IP address outside of the range you specified. After you sign in with your Azure AD credentials you should see a message like this:</p>
+</li>
+</ol>
+<p><img alt="Denied access to Azure RemoteApp" src="../media/remoteapp-secureaccess/ra-accessdenied.png" /></p>
+<h3 id="future-conditional-access-features">Future conditional access features</h3>
+<p>The Azure Active Directory team is working on new capabilities in Conditional Access. Administrators will be able to create new types of rules beyond network location based rules. A public preview of the new functionality should be available soon.</p>
+<h3 id="how-to-monitor-access-to-azure-remoteapp">How to monitor access to Azure RemoteApp</h3>
+<p>A great feature to use alongside conditional access is the Azure Active Directory Premium reporting functionality. You can use reports to monitor who is accessing your environment and detect any suspicious activity.</p>
+<p>For example, you can see the names of the users who accessed Azure RemoteApp, how many times they did it and when.</p>
+<ol>
+<li>
+<p>In Azure portal, click <strong>Active Directory</strong>, and then click your directory.</p>
+</li>
+<li>
+<p>Go to the <strong>Reports</strong> tab.</p>
+</li>
+<li>
+<p>From the list of reports, select <strong>Application usage</strong> under <strong>Integrated applications</strong>.</p>
+<p>You'll see some aggregated statistics for Azure RemoteApp. 
+<img alt="Aggregated Azure RemoteApp access stats" src="../media/remoteapp-secureaccess/ra-accessstats.png" /></p>
+</li>
+<li>
+<p>Click the application to reveal information about users accessing Azure RemoteApp.
+<img alt="User access stats for Azure RemoteApp" src="../media/remoteapp-secureaccess/ra-userstats.png" /></p>
+</li>
+</ol>
+<h3 id="summary">Summary</h3>
+<p>With Azure Active Directory Premium you can set up access rules to Azure RemoteApp (and other software as a service applications available through Azure AD). Rules are currently limited to network location based policies but will in the future be extended to other aspects of enterprise management.</p>
+<p>Azure AD Premium also offers reporting and monitoring capabilities that further extend the control the admin has over their Azure RemoteApp environment.</p>
+<h2 id="how-do-i-make-sure-my-secure-resource-is-accessible-only-from-my-azure-remoteapp-environment">How do I make sure my secure resource is accessible only from my Azure RemoteApp environment?</h2>
+<p>In previous sections of this article we focused on securing access to the Azure RemoteApp environment. We have accomplished that by choosing the users who are allowed access and setting up access rules to further control how they can use the service.</p>
+<p>A common scenario for Azure RemoteApp deployments is that the remote applications need to communicate with a back-end resource, for example a SQL database. This resource is hosted either on-premises (e.g. in a corporate network) or in the cloud (e.g. in Azure IaaS). Administrators often want to make sure that the back-end resource can only be accessed by applications deployed via Azure RemoteApp and not for example by an application running directly on a user’s PC and accessing over public Internet. Azure RemoteApp is often seen as the centrally-managed and secured environment and thus the only path through which users should interact with the back-end resource.</p>
+<p>The solution is to place both the Azure RemoteApp environment and the secure resource in the same Azure Virtual Network (VNET). If the resource is in a different site, you can establish a site-to-site VPN connection, for example to create a VNet spanning the Azure data center and the customer on-premises environment.</p>
+<p>Azure RemoteApp supports two types of collection deployments where you can provide your own VNET:</p>
+<ul>
+<li>
+<p>Non-domain-joined: the applications will have “line of sight” of the other resources in the VNET. For example, this can be used to connect applications to a SQL database that uses SQL authentication (applications authenticate the user directly against the database)</p>
+</li>
+<li>
+<p>Domain-joined: the virtual machines used by Azure RemoteApp are joined to a domain controller in the VNET. This is useful when the applications need to authenticate against a Windows Domain Controller in order to get access to a back-end resource.
+<img alt="A domain-joined collection in Azure RemoteApp" src="../media/remoteapp-secureaccess/ra-domainjoined.png" /></p>
+</li>
+</ul>
+<h3 id="how-to-create-a-secure-connection-between-azure-and-my-on-premises-environment">How to create a secure connection between Azure and my on-premises environment</h3>
+<p>There are several configuration options for connecting your Azure and on-premises environments. A good overview of the options is available here.</p>
+<p>With Azure RemoteApp you need to configure your VNet first, and then use it during the creation process of your collection. </p>
+<h2 id="the-complete-solution">The complete solution</h2>
+<p>The diagram below shows the complete solution where we have built a secure access channel from the end user, through Azure RemoteApp (ARA), into the backend resource.
+<img alt="Secure Azure RemoteApp" src="../media/remoteapp-secureaccess/ra-secureoverview.png" />
+In Stage 1 we selected the users and created access rules that govern how ARA can be accessed. In the example below we only allow access for users working from the corporate network. Non-compliant users will not be able to access the ARA environment at all.
+In “Stage 2” we have exposed the backend resource only through the VNet/VPN configuration which we control. Azure RemoteApp has been placed in the same VNet. The end result is that the resource can only be accessed through the ARA environment.</p>
+              
+               
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span class="prev"><a href="../remoteapp-o365user/"><i class="fa fa-angle-left"></i> Previous</a></span>
+      
+      
+        <span class="next"><a href="../remoteapp-upd/">Next <i class="fa fa-angle-right"></i></a></span>
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+</body>
+</html>

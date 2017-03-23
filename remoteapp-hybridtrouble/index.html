@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Troubleshoot a hybrid collection - Azure RemoteApp</title>
+  
+
+  <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="../css/override.css" type="text/css" />
+  <link href="../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Troubleshoot a hybrid collection";
+    var mkdocs_page_input_path = "remoteapp-hybridtrouble.md";
+    var mkdocs_page_url = "/remoteapp-hybridtrouble/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="../js/extra.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+	<div class="header-top">
+		<div class="header-top-left">
+			<a href="http://www.citrix.com" class="logo-position"><img height="60" src="https://thumbnail-ec2.sharefile.com/thumbnail.aspx?encparams=ypL2J0l-In6gqXJ7yeyKP8A1rqwKMH-C8-nfkJcHJNIN7Y0yZiJsYOcUe-uc0YeZzWLQSFSd1FnuMHPa30XSSINHuGOA8nvvnBT5WmjGlKvd5mxJ4IfT7iTVyHELwhWQiNCznPCiIFyhkA78uKX77PlU2iyhM4YdRM1NKabBe-4wXuiFJsbtAxyJ2UukO_E2ZSf1W3l75Dw8G0zflVkT-EFqyx1zSGId0qzLjm6nzJ8dA9zo-1AJzUisdzmGMzHOq_LMsOWyaalvmcWvCkl-q10GBSbfekfTIFW9LpZNYjkLNSnK8rcwNjWVr_jYayrGjIj2e5dDIMiDj3NRvW51AvHRjxYH9xRRRtY$" target="_blank" class="logo-citrix"><span style="color:#fff;font-size: 20px;position: relative;top:4px;left: 5px">SDK Reference</span></a>
+		</div>
+		<div class="header-top-right">
+			<ul>
+			<!--	<li class="list-inline home"><a href="..">HOME</a></li>
+				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
+				<form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
+            class="searchdocs">
+<a class="fa fa-search errspan"></a></li>
+</form>
+				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
+			</ul>
+
+		</div>
+	</div>
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<i class="fa fa-search"></i>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Overview</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-whatis/">What is Azure RemoteApp?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-licensing/">How does licensing work?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-faq/">FAQ</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-whatsnew/">What's new?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-roadmap/">What's coming?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../azure-subscription-service-limits/">Azure service limits</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Real world scenarios</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-anyapp/">Run any app on any device</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-tutorial-o365anywhere/">Run Office 365 on any device</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Will my app work?</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-appreqs/">App requirements</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-onedrive/">OneDrive for Business</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-sql/">SQL Azure</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-o365/">Office 365</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-outlook/">Outlook 2013</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-appv/">Using App-V apps</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-quickbooks/">QuickBooks on Azure RemoteApp</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-secure/">Secure apps and resources</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Create a RemoteApp collection</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-collections/">Which collection do you need?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-create-cloud-deployment/">Create a cloud collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-create-hybrid-deployment/">Create a hybrid collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-update/">Update your collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-imageoptions/">Create a RemoteApp image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-images/">What is in the template image?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-imagereqs/">Image requirements</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-uploadimage/">Upload an image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-image-on-azurevm/">Create an image from an Azure VM</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Configure a Virtual Network</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-planvnet/">Plan your VNET</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-ports/">Port and URL info</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-vnet/">Validate your VNET</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-migrate/">Migrate to an Azure VNET</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Publish applications</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-publish/">How to publish an app</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Manage Users</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-user/">How to add users</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-ad/">Configure Active Directory</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-changetenant/">Change the Azure AD tenant</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-o365user/">Office 365 user accounts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-secureaccess/">Secure Data</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-upd/">User data</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Client experience</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-clients/">Supported clients</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-redirection/">Configure redirection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-bestpractices/">Client best practices</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Automate RemoteApp</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-tutorial-arawithpowershell/">RemoteApp PowerShell cmdlets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../automation-manage-remote-app/">Manage RemoteApp with Azure Automation</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Troubleshoot</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Troubleshoot a hybrid collection</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#troubleshoot-creating-azure-remoteapp-hybrid-collections">Troubleshoot creating Azure RemoteApp hybrid collections</a></li>
+                
+                    <li><a class="toctree-l4" href="#your-image-is-invalid">Your image is invalid</a></li>
+                
+                    <li><a class="toctree-l4" href="#does-your-vnet-have-network-security-groups-defined">Does your VNET have network security groups defined?</a></li>
+                
+                    <li><a class="toctree-l4" href="#are-you-using-your-own-dns-servers-and-are-they-accessible-from-your-vnet-subnet">Are you using your own DNS servers? And are they accessible from your VNET subnet?</a></li>
+                
+                    <li><a class="toctree-l4" href="#are-you-using-an-active-directory-domain-controller-in-your-collection">Are you using an Active Directory domain controller in your collection?</a></li>
+                
+                    <li><a class="toctree-l4" href="#what-domain-name-did-you-specify-when-you-created-your-collection">What domain name did you specify when you created your collection?</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-cloudtrouble/">Troubleshoot a cloud collection</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+         <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Troubleshoot &raquo;</li>
+        
+      
+    
+    <li>Troubleshoot a hybrid collection</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main">
+            <div class="section">
+             
+                <p><properties
+    pageTitle="Troubleshoot creating RemoteApp hybrid collections | Microsoft Azure"
+    description="Learn how to troubleshoot RemoteApp hybrid collection creation failures"
+    services="remoteapp"
+    documentationCenter=""
+    authors="vkbucha"
+    manager="mbaldwin" /></p>
+<p><tags
+    ms.service="remoteapp"
+    ms.workload="compute"
+    ms.tgt_pltfrm="na"
+    ms.devlang="na"
+    ms.topic="article"
+    ms.date="08/15/2016"
+    ms.author="elizapo" /></p>
+<h1 id="troubleshoot-creating-azure-remoteapp-hybrid-collections">Troubleshoot creating Azure RemoteApp hybrid collections</h1>
+<blockquote>
+<p>[AZURE.IMPORTANT]
+Azure RemoteApp is being discontinued. Read the <a href="https://go.microsoft.com/fwlink/?linkid=821148">announcement</a> for details.</p>
+</blockquote>
+<p>A hybrid collection is hosted in and stores data in the Azure cloud but also lets users access data and resources stored on your local network. Users can access apps by logging in with their corporate credentials synchronized or federated with Azure Active Directory. You can deploy a hybrid collection that uses an existing Azure Virtual Network, or you can create a new virtual network. We recommend that you create or use a virtual network subnet with a CIDR range large enough for expected future growth for Azure RemoteApp.</p>
+<p>Haven't created your collection yet? See <a href="../remoteapp-create-hybrid-deployment/">Create a hybrid collection</a> for the steps.</p>
+<p>If you are having trouble creating your collection, or if the collection isn't working the way you think it should, check out the following information.</p>
+<h2 id="your-image-is-invalid">Your image is invalid</h2>
+<p>If you see a message like, "GoldImageInvalid" when you are waiting for Azure to provision your collection, it means that your template image doesn't meet the <a href="../remoteapp-imagereqs/">defined image requirements</a>. So, go read those <a href="../remoteapp-imagereqs/">requirements</a>, fix your image, and try to create your collection again.</p>
+<h2 id="does-your-vnet-have-network-security-groups-defined">Does your VNET have network security groups defined?</h2>
+<p>If you have network security groups defined on the subnet you are using for your collection, make sure these <a href="../remoteapp-ports/">URLs and ports</a> are accessible from within your subnet.</p>
+<p>You can add additional network security groups to the VMs deployed by you in the subnet for tighter control.</p>
+<h2 id="are-you-using-your-own-dns-servers-and-are-they-accessible-from-your-vnet-subnet">Are you using your own DNS servers? And are they accessible from your VNET subnet?</h2>
+<blockquote>
+<p>[AZURE.NOTE] You have to make sure the DNS servers in your VNET are always up and always able to resolve the virtual machines hosted in the VNET. Don't use Google DNS for this.</p>
+</blockquote>
+<p>For hybrid collections you use your own DNS servers. You specify them in your network configuration schema or through the management portal when you create your virtual network. DNS servers are used in the order that they are specified in a failover manner (as opposed to round robin).<br />
+Please refer to <a href="">Name Resolution for VMs and Role Instances</a> to make sure your DNS servers are configured correcly.</p>
+<p>Make sure the DNS servers for your collection are accessible and available from the VNET subnet you specified for this collection.</p>
+<p>For example:</p>
+<pre><code>&lt;VirtualNetworkConfiguration&gt;
+&lt;Dns&gt;
+  &lt;DnsServers&gt;
+    &lt;DnsServer name="" IPAddress=""/&gt;
+  &lt;/DnsServers&gt;
+&lt;/Dns&gt;
+&lt;/VirtualNetworkConfiguration&gt;
+</code></pre>
+<p><img alt="Define your DNS" src="../media/remoteapp-hybridtrouble/dnsvpn.png" /></p>
+<h2 id="are-you-using-an-active-directory-domain-controller-in-your-collection">Are you using an Active Directory domain controller in your collection?</h2>
+<p>Currently only one Active Directory domain can be associated with Azure RemoteApp. The hybrid collection supports only Azure Active Directory accounts that have been synced using DirSync tool from a Windows Server Active Directory deployment; specifically, either synced with the Password Synchronization option or synced with Active Directory Federation Services (AD FS) federation configured. You need to create a custom domain that matches the UPN domain suffix for your on-premises domain and set up directory integration.</p>
+<p>See <a href="../remoteapp-ad/">Configuring Active Directory for Azure RemoteApp</a> for more information.</p>
+<p>Make sure the domain details provided are valid and the domain controller is reachable from the VM created in the subnet used for Azure Remote App. Also make sure the service account credentials supplied have permissions to add computers to the provided domain and that the AD name provided can be resolved from the DNS provided in the VNET.</p>
+<h2 id="what-domain-name-did-you-specify-when-you-created-your-collection">What domain name did you specify when you created your collection?</h2>
+<p>The domain name you created or added must be an internal domain name (not your Azure AD domain name) and must be in resolvable DNS format (contoso.local). For example, you have an Active Directory internal name (contoso.local) and an Active Directory UPN (contoso.com) - you have to use the internal name when you create your collection.</p>
+              
+               
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span class="prev"><a href="../automation-manage-remote-app/"><i class="fa fa-angle-left"></i> Previous</a></span>
+      
+      
+        <span class="next"><a href="../remoteapp-cloudtrouble/">Next <i class="fa fa-angle-right"></i></a></span>
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+</body>
+</html>

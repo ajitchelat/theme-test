@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>SQL Azure - Azure RemoteApp</title>
+  
+
+  <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="../css/override.css" type="text/css" />
+  <link href="../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "SQL Azure";
+    var mkdocs_page_input_path = "remoteapp-sql.md";
+    var mkdocs_page_url = "/remoteapp-sql/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="../js/extra.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+	<div class="header-top">
+		<div class="header-top-left">
+			<a href="http://www.citrix.com" class="logo-position"><img height="60" src="https://thumbnail-ec2.sharefile.com/thumbnail.aspx?encparams=ypL2J0l-In6gqXJ7yeyKP8A1rqwKMH-C8-nfkJcHJNIN7Y0yZiJsYOcUe-uc0YeZzWLQSFSd1FnuMHPa30XSSINHuGOA8nvvnBT5WmjGlKvd5mxJ4IfT7iTVyHELwhWQiNCznPCiIFyhkA78uKX77PlU2iyhM4YdRM1NKabBe-4wXuiFJsbtAxyJ2UukO_E2ZSf1W3l75Dw8G0zflVkT-EFqyx1zSGId0qzLjm6nzJ8dA9zo-1AJzUisdzmGMzHOq_LMsOWyaalvmcWvCkl-q10GBSbfekfTIFW9LpZNYjkLNSnK8rcwNjWVr_jYayrGjIj2e5dDIMiDj3NRvW51AvHRjxYH9xRRRtY$" target="_blank" class="logo-citrix"><span style="color:#fff;font-size: 20px;position: relative;top:4px;left: 5px">SDK Reference</span></a>
+		</div>
+		<div class="header-top-right">
+			<ul>
+			<!--	<li class="list-inline home"><a href="..">HOME</a></li>
+				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
+				<form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
+            class="searchdocs">
+<a class="fa fa-search errspan"></a></li>
+</form>
+				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
+			</ul>
+
+		</div>
+	</div>
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<i class="fa fa-search"></i>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Overview</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-whatis/">What is Azure RemoteApp?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-licensing/">How does licensing work?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-faq/">FAQ</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-whatsnew/">What's new?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-roadmap/">What's coming?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../azure-subscription-service-limits/">Azure service limits</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Real world scenarios</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-anyapp/">Run any app on any device</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-tutorial-o365anywhere/">Run Office 365 on any device</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Will my app work?</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-appreqs/">App requirements</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-onedrive/">OneDrive for Business</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">SQL Azure</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#sql-azure-with-azure-remoteapp">SQL Azure with Azure RemoteApp</a></li>
+                
+                    <li><a class="toctree-l4" href="#migrate-your-sql-data">Migrate your SQL data</a></li>
+                
+                    <li><a class="toctree-l4" href="#configure-azure-remoteapp">Configure Azure RemoteApp</a></li>
+                
+                    <li><a class="toctree-l4" href="#app-and-sql-configuration-considerations">App and SQL configuration considerations:</a></li>
+                
+                    <li><a class="toctree-l4" href="#troubleshooting">Troubleshooting</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-o365/">Office 365</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-outlook/">Outlook 2013</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-appv/">Using App-V apps</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-quickbooks/">QuickBooks on Azure RemoteApp</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-secure/">Secure apps and resources</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Create a RemoteApp collection</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-collections/">Which collection do you need?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-create-cloud-deployment/">Create a cloud collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-create-hybrid-deployment/">Create a hybrid collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-update/">Update your collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-imageoptions/">Create a RemoteApp image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-images/">What is in the template image?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-imagereqs/">Image requirements</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-uploadimage/">Upload an image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-image-on-azurevm/">Create an image from an Azure VM</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Configure a Virtual Network</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-planvnet/">Plan your VNET</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-ports/">Port and URL info</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-vnet/">Validate your VNET</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-migrate/">Migrate to an Azure VNET</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Publish applications</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-publish/">How to publish an app</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Manage Users</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-user/">How to add users</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-ad/">Configure Active Directory</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-changetenant/">Change the Azure AD tenant</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-o365user/">Office 365 user accounts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-secureaccess/">Secure Data</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-upd/">User data</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Client experience</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-clients/">Supported clients</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-redirection/">Configure redirection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-bestpractices/">Client best practices</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Automate RemoteApp</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-tutorial-arawithpowershell/">RemoteApp PowerShell cmdlets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../automation-manage-remote-app/">Manage RemoteApp with Azure Automation</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Troubleshoot</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-hybridtrouble/">Troubleshoot a hybrid collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-cloudtrouble/">Troubleshoot a cloud collection</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+         <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Will my app work? &raquo;</li>
+        
+      
+    
+    <li>SQL Azure</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main">
+            <div class="section">
+             
+                <p><properties
+   pageTitle="SQL Azure with Azure RemoteApp | Microsoft Azure"
+   description="Learn how to use SQL Azure with Azure RemoteApp."
+   services="remoteapp"
+   documentationCenter=""
+   authors="ericorman"
+   manager="mbaldwin"
+   editor=""/></p>
+<p><tags
+   ms.service="remoteapp"
+   ms.devlang="na"
+   ms.topic="hero-article"
+   ms.tgt_pltfrm="na"
+   ms.workload="compute"
+   ms.date="08/15/2016"
+   ms.author="elizapo"/></p>
+<h1 id="sql-azure-with-azure-remoteapp">SQL Azure with Azure RemoteApp</h1>
+<blockquote>
+<p>[AZURE.IMPORTANT]
+Azure RemoteApp is being discontinued. Read the <a href="https://go.microsoft.com/fwlink/?linkid=821148">announcement</a> for details.</p>
+</blockquote>
+<p>Often when customers choose to host their Windows applications in the cloud with Azure RemoteApp they also want to migrate their data such as SQL servers into the cloud for an entire cloud deployment. This allows for entire cloud hosted solution that can be accessed anytime by any device anywhere using Azure RemoteApp. Below are links and references along with guidance to help you with this process.  </p>
+<h2 id="migrate-your-sql-data">Migrate your SQL data</h2>
+<p>Start with <a href="">Migrating a SQL Server database to Azure SQL Database</a>. </p>
+<h2 id="configure-azure-remoteapp">Configure Azure RemoteApp</h2>
+<p>Host your Windows application in Azure RemoteApp. Below is a very high level step-by-step:</p>
+<ol>
+<li>Create the <a href="../remoteapp-imageoptions/">Azure RemoteApp template VM</a>. </li>
+<li>Install the required application on the VM.</li>
+<li>Configure the application so it connects to the SQL DB and confirm that it works.</li>
+<li>Sysprep and shutdown the VM. Capture this as an image for use with Azure. <strong>Note:</strong> You will need to ensure that the application is able to retain the DB connectivity information through the sysprep process. If the application is unable to retain the DB connection information, you might want to engage the vendor of the application to check how we can specify the connection string.</li>
+<li>Import the custom image into your Azure RemoteApp library selecting the proper geographical location that your SQL Azure deployment resides. </li>
+<li>Deploy a RemoteApp collection in the same data center as your SQL Azure deployment using the above template and publish the application. Deploying Azure RemoteApp in the same data center as your SQL Azure deployment helps ensure the fastest connection speeds and reduce latency. </li>
+</ol>
+<h2 id="app-and-sql-configuration-considerations">App and SQL configuration considerations:</h2>
+<p>There are a few points to consider when using Azure SQL with RemoteApp:</p>
+<p>Learn <a href="">how to configure an Azure SQL database firewall</a>. An excerpt from the article states, “Initially, all access to your Azure SQL Database server is blocked by the firewall. In order to begin using your Azure SQL Database server, you must go to the Classic Portal and specify one or more server-level firewall rules that enable access to your Azure SQL Database server. Use the firewall rules to specify which IP address ranges from the Internet are allowed, and whether or not Azure applications can attempt to connect to your Azure SQL Database server.”</p>
+<p>Also, when a computer attempts to connect to your database server from the Internet, the firewall checks the originating IP address of the request against the full set of server-level and (if required) database-level firewall rules. “If the IP address of the request is within one of the ranges specified in the server-level firewall rules, the connection is granted to your Azure SQL Database server.” Hence, we can make use of IP Ranges and not just individual source IP addresses.</p>
+<p>Follow the step by step instructions in <a href="">How to: Configure firewall settings on SQL Database using the Azure Portal</a> to specify the IP range. When you are configuring the SQL Firewall rules, please provide the IP range of the subnet that is specified for the Azure RemoteApp collection. This should allow the ARA servers to connect to the SQL DB even though they will have dynamically-assigned IP Addresses.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>If the experience of using a client application hosted in Azure RemoteApp that connects to a SQL database where hosted on Azure or on-premises is slow there could be a few reasons why.  </p>
+<ul>
+<li>Network latency from your device to Azure is high. Move to the best and fastest network connection you can for best performance. Use <a href="http://azurespeed.com/">azurespeed.com</a> as a general tool to test your devices latency to Azure data center.  </li>
+<li>Client app hosted in Azure RemoteApp is under stress. Selecting a different billing plan such as Premium billing will improve performance. Another trick is to monitor the resources your application is consuming: during an active session perform a ctrl-alt-end key sequence which will launch the SAS screen, select Task Manager and observe resource utilization for your app.</li>
+<li>SQL server is under stress or not optimized. Follow SQL guidance for troubleshooting. </li>
+</ul>
+              
+               
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span class="prev"><a href="../remoteapp-onedrive/"><i class="fa fa-angle-left"></i> Previous</a></span>
+      
+      
+        <span class="next"><a href="../remoteapp-o365/">Next <i class="fa fa-angle-right"></i></a></span>
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+</body>
+</html>

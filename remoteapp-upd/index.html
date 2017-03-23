@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>User data - Azure RemoteApp</title>
+  
+
+  <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="../css/override.css" type="text/css" />
+  <link href="../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "User data";
+    var mkdocs_page_input_path = "remoteapp-upd.md";
+    var mkdocs_page_url = "/remoteapp-upd/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="../js/extra.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+	<div class="header-top">
+		<div class="header-top-left">
+			<a href="http://www.citrix.com" class="logo-position"><img height="60" src="https://thumbnail-ec2.sharefile.com/thumbnail.aspx?encparams=ypL2J0l-In6gqXJ7yeyKP8A1rqwKMH-C8-nfkJcHJNIN7Y0yZiJsYOcUe-uc0YeZzWLQSFSd1FnuMHPa30XSSINHuGOA8nvvnBT5WmjGlKvd5mxJ4IfT7iTVyHELwhWQiNCznPCiIFyhkA78uKX77PlU2iyhM4YdRM1NKabBe-4wXuiFJsbtAxyJ2UukO_E2ZSf1W3l75Dw8G0zflVkT-EFqyx1zSGId0qzLjm6nzJ8dA9zo-1AJzUisdzmGMzHOq_LMsOWyaalvmcWvCkl-q10GBSbfekfTIFW9LpZNYjkLNSnK8rcwNjWVr_jYayrGjIj2e5dDIMiDj3NRvW51AvHRjxYH9xRRRtY$" target="_blank" class="logo-citrix"><span style="color:#fff;font-size: 20px;position: relative;top:4px;left: 5px">SDK Reference</span></a>
+		</div>
+		<div class="header-top-right">
+			<ul>
+			<!--	<li class="list-inline home"><a href="..">HOME</a></li>
+				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
+				<form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
+            class="searchdocs">
+<a class="fa fa-search errspan"></a></li>
+</form>
+				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
+			</ul>
+
+		</div>
+	</div>
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<i class="fa fa-search"></i>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Overview</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-whatis/">What is Azure RemoteApp?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-licensing/">How does licensing work?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-faq/">FAQ</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-whatsnew/">What's new?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-roadmap/">What's coming?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../azure-subscription-service-limits/">Azure service limits</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Real world scenarios</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-anyapp/">Run any app on any device</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-tutorial-o365anywhere/">Run Office 365 on any device</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Will my app work?</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-appreqs/">App requirements</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-onedrive/">OneDrive for Business</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-sql/">SQL Azure</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-o365/">Office 365</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-outlook/">Outlook 2013</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-appv/">Using App-V apps</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-quickbooks/">QuickBooks on Azure RemoteApp</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-secure/">Secure apps and resources</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Create a RemoteApp collection</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-collections/">Which collection do you need?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-create-cloud-deployment/">Create a cloud collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-create-hybrid-deployment/">Create a hybrid collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-update/">Update your collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-imageoptions/">Create a RemoteApp image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-images/">What is in the template image?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-imagereqs/">Image requirements</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-uploadimage/">Upload an image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-image-on-azurevm/">Create an image from an Azure VM</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Configure a Virtual Network</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-planvnet/">Plan your VNET</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-ports/">Port and URL info</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-vnet/">Validate your VNET</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-migrate/">Migrate to an Azure VNET</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Publish applications</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-publish/">How to publish an app</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Manage Users</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-user/">How to add users</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-ad/">Configure Active Directory</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-changetenant/">Change the Azure AD tenant</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-o365user/">Office 365 user accounts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-secureaccess/">Secure Data</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">User data</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#how-does-azure-remoteapp-save-user-data-and-settings">How does Azure RemoteApp save user data and settings?</a></li>
+                
+                    <li><a class="toctree-l4" href="#how-can-an-admin-get-to-the-data">How can an admin get to the data?</a></li>
+                
+                    <li><a class="toctree-l4" href="#is-the-data-backed-up">Is the data backed up?</a></li>
+                
+                    <li><a class="toctree-l4" href="#how-do-users-see-the-upd-on-the-server-side">How do users see the UPD on the server side?</a></li>
+                
+                    <li><a class="toctree-l4" href="#whats-the-best-way-to-use-outlook-and-upd">What's the best way to use Outlook and UPD?</a></li>
+                
+                    <li><a class="toctree-l4" href="#what-about-redirection">What about redirection?</a></li>
+                
+                    <li><a class="toctree-l4" href="#can-i-use-my-upd-as-a-network-share">Can I use my UPD as a network share?</a></li>
+                
+                    <li><a class="toctree-l4" href="#if-i-delete-a-user-from-a-collection-is-their-upd-deleted">If I delete a user from a collection, is their UPD deleted?</a></li>
+                
+                    <li><a class="toctree-l4" href="#can-i-access-my-users-upds-either-current-or-deleted-users">Can I access my users' UPDs (either current or deleted users)?</a></li>
+                
+                    <li><a class="toctree-l4" href="#are-upds-available-offline">Are UPDs available offline?</a></li>
+                
+                    <li><a class="toctree-l4" href="#do-registry-key-settings-persist">Do registry key settings persist?</a></li>
+                
+                    <li><a class="toctree-l4" href="#can-i-disable-upds-for-a-collection">Can I disable UPDs for a collection?</a></li>
+                
+                    <li><a class="toctree-l4" href="#can-i-restrict-users-from-saving-data-to-the-system-drive">Can I restrict users from saving data to the system drive?</a></li>
+                
+                    <li><a class="toctree-l4" href="#can-i-seed-upds-i-want-to-put-some-data-in-the-upd-thats-available-the-first-time-the-user-signs-in">Can I seed UPDs? I want to put some data in the UPD that's available the first time the user signs in.</a></li>
+                
+                    <li><a class="toctree-l4" href="#can-i-change-the-size-of-the-upd-depending-on-how-much-data-i-want-to-store">Can I change the size of the UPD depending on how much data I want to store?</a></li>
+                
+                    <li><a class="toctree-l4" href="#how-do-i-run-a-startup-script-in-azure-remoteapp">How do I run a startup script in Azure RemoteApp?</a></li>
+                
+                    <li><a class="toctree-l4" href="#what-about-placing-a-startup-script-in-the-start-menu-would-that-work">What about placing a startup script in the Start menu? Would that work?</a></li>
+                
+                    <li><a class="toctree-l4" href="#can-i-use-mstscexe-the-remote-desktop-program-to-configure-logon-scripts">Can I use mstsc.exe (the Remote Desktop program) to configure logon scripts?</a></li>
+                
+                    <li><a class="toctree-l4" href="#can-i-store-data-on-the-vm-locally">Can I store data on the VM locally?</a></li>
+                
+                    <li><a class="toctree-l4" href="#how-do-i-mount-an-azure-file-share-on-a-vm-using-powershell">How do I mount an Azure File share on a VM, using PowerShell?</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Client experience</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-clients/">Supported clients</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-redirection/">Configure redirection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-bestpractices/">Client best practices</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Automate RemoteApp</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-tutorial-arawithpowershell/">RemoteApp PowerShell cmdlets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../automation-manage-remote-app/">Manage RemoteApp with Azure Automation</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Troubleshoot</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-hybridtrouble/">Troubleshoot a hybrid collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-cloudtrouble/">Troubleshoot a cloud collection</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+         <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Manage Users &raquo;</li>
+        
+      
+    
+    <li>User data</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main">
+            <div class="section">
+             
+                <p><properties 
+    pageTitle="How does Azure RemoteApp save user data and settings? | Microsoft Azure"
+    description="Learn how Azure RemoteApp saves user data using the user profile disk."
+    services="remoteapp"
+    documentationCenter="" 
+    authors="lizap" 
+    manager="mbaldwin" /></p>
+<p><tags 
+    ms.service="remoteapp" 
+    ms.workload="compute" 
+    ms.tgt_pltfrm="na" 
+    ms.devlang="na" 
+    ms.topic="article" 
+    ms.date="08/15/2016" 
+    ms.author="elizapo" /></p>
+<h1 id="how-does-azure-remoteapp-save-user-data-and-settings">How does Azure RemoteApp save user data and settings?</h1>
+<blockquote>
+<p>[AZURE.IMPORTANT]
+Azure RemoteApp is being discontinued. Read the <a href="https://go.microsoft.com/fwlink/?linkid=821148">announcement</a> for details.</p>
+</blockquote>
+<p>Azure RemoteApp saves user identity and customizations across devices and sessions. This user data is stored in a per-user per-collection disk, known as a user profile disk (UPD). The disk follows the user and ensures the user has a consistent experience, regardless of where they sign in. 
+saves </p>
+<p>User profile disks are completely transparent to the user — users save documents to their Documents folder (on what appears to be a local drive) and change their app settings as usual. At the same time, all personal settings persist when connecting to Azure RemoteApp from any device. All the user sees is their data in the same place.</p>
+<p>Each UPD has 50GB of persistent storage and contains both user data and application settings. </p>
+<p>Read on for specifics on user profile data.</p>
+<blockquote>
+<p>[AZURE.NOTE] Need to disable the UPD? You can do that now - check out Pavithra's blog post, <a href="https://blogs.technet.microsoft.com/enterprisemobility/2015/11/11/disable-user-profile-disks-upds-in-azure-remoteapp/">Disable User Profile Disks (UPDs) in Azure RemoteApp</a>, for details.</p>
+</blockquote>
+<h2 id="how-can-an-admin-get-to-the-data">How can an admin get to the data?</h2>
+<p>If you need to access the data for one of your users (for disaster recovery or if the user leaves the company), contact Azure Support and provide the subscription information for the collection and the user identity. The Azure RemoteApp team will provide you a URL to the VHD. Download that VHD and retrieve any documents or files you need. Note that the VHD is 50GB, so it will take a bit to download it.</p>
+<h2 id="is-the-data-backed-up">Is the data backed up?</h2>
+<p>Yes, we save a backup of the user data per geographic location. The data is read-only and can be accessed in the same way as the regular data would be (contact Azure RemoteApp to get it), if the primary data center is down. The data is copied real-time to the backup location and we do not keep copies of different versions. So, on data corruption, we will not be able to restore it to a previously known good version but if the primary data center is down, you will be able to get user data from the other location.</p>
+<h2 id="how-do-users-see-the-upd-on-the-server-side">How do users see the UPD on the server side?</h2>
+<p>Each user will have their own directory on the server that maps to their UPD: c:\Users\username.</p>
+<h2 id="whats-the-best-way-to-use-outlook-and-upd">What's the best way to use Outlook and UPD?</h2>
+<p>Azure RemoteApp saves the Outlook state (mailboxes, PSTs) between sessions. To enable this, we need the PST to be stored in the user profile data (c:\users\<username>). This is the default location for the data, so as long as you do not change the location, the data will persist between sessions.</p>
+<p>We also recommend that you use "cached" mode in Outlook and use "server/online" mode for searching.</p>
+<p>Check out <a href="../remoteapp-outlook/">this article</a> for more information on using Outlook and Azure RemoteApp.</p>
+<h2 id="what-about-redirection">What about redirection?</h2>
+<p>You can configure Azure RemoteApp to let users access local devices by setting up <a href="../remoteapp-redirection/">redirection</a>. Local devices will then be able to access the data on the UPD.</p>
+<h2 id="can-i-use-my-upd-as-a-network-share">Can I use my UPD as a network share?</h2>
+<p>No. UPDs cannot be used as a network share. A UPD is only available to the user when the user is actively connected to Azure RemoteApp.</p>
+<h2 id="if-i-delete-a-user-from-a-collection-is-their-upd-deleted">If I delete a user from a collection, is their UPD deleted?</h2>
+<p>No, when you delete a user, we do not automatically delete the UPD - instead, we store the data until you delete the collection. 90 days after you delete the collection, we delete all UPDs. </p>
+<p>If you need to delete a UPD from a collection, contact Azure RemoteApp - we can delete UPD from our side.</p>
+<h2 id="can-i-access-my-users-upds-either-current-or-deleted-users">Can I access my users' UPDs (either current or deleted users)?</h2>
+<p>Yes, if you contact <a href="mailto:remoteappforum@microsoft.com">Azure RemoteApp</a>, we can set you up with a URL to access the data. You'll have about 10 hours to download any data or files from the UPD before the access expires.</p>
+<h2 id="are-upds-available-offline">Are UPDs available offline?</h2>
+<p>Right now we do not provide offline access to UPDs, beyond the 10 hour access window described above. This means that we do not currently have a way to provide you with access for long enough to complete more complicated tasks, like running anti-virus software on the UPDs or accessing data for an audit.</p>
+<h2 id="do-registry-key-settings-persist">Do registry key settings persist?</h2>
+<p>Yes, anything written to HKEY_Current_User is part of the UPD.</p>
+<h2 id="can-i-disable-upds-for-a-collection">Can I disable UPDs for a collection?</h2>
+<p>Yes, you can ask Azure RemoteApp to disable UPDs for a subscription, but you cannot do that yourself. This means that UPDs will be disabled for all collections in the subscription.</p>
+<p>You might want to disable UPDs in any of the following situations: </p>
+<ul>
+<li>You need complete access and control of user data (for audit and review purposes such as financial institutions).</li>
+<li>You have 3rd-party user profile management solutions on-premises and want to continue using them in your domain-joined Azure RemoteApp deployment. This would require the profile agent to be loaded into the gold image. </li>
+<li>You don’t need any local data storage or you have all data in the cloud or file share and would like to control saving of data locally using Azure RemoteApp.</li>
+</ul>
+<p>See  <a href="https://blogs.technet.microsoft.com/enterprisemobility/2015/11/11/disable-user-profile-disks-upds-in-azure-remoteapp/">Disable User Profile Disks (UPDs) in Azure RemoteApp</a> for more information.</p>
+<h2 id="can-i-restrict-users-from-saving-data-to-the-system-drive">Can I restrict users from saving data to the system drive?</h2>
+<p>Yes, but you'll need to set that up in the template image before you create the collection. Use the following steps to block access to the system drive:</p>
+<ol>
+<li>Run <strong>gpedit.msc</strong> on the template image.</li>
+<li>Navigate to <strong>User Configuration &gt; Administrative Templates &gt; Windows Components &gt; Explorer</strong>.</li>
+<li>Select the following options:<ul>
+<li><strong>Hide these specified drives in My Computer</strong></li>
+<li><strong>Prevent access to drives from My Computer</strong></li>
+</ul>
+</li>
+</ol>
+<h2 id="can-i-seed-upds-i-want-to-put-some-data-in-the-upd-thats-available-the-first-time-the-user-signs-in">Can I seed UPDs? I want to put some data in the UPD that's available the first time the user signs in.</h2>
+<p>Yes, when you create the template image, you can add information to the default profile. That information is then added to the UPD.</p>
+<h2 id="can-i-change-the-size-of-the-upd-depending-on-how-much-data-i-want-to-store">Can I change the size of the UPD depending on how much data I want to store?</h2>
+<p>No, all UPDs have 50 GB of storage. If you want to store different amounts of data, try the following:</p>
+<ol>
+<li>Disable UPDs for the collection.</li>
+<li>Set up a file share for users to access.</li>
+<li>Load the file share by using a startup script. See below for details on startup scripts in Azure RemoteApp.</li>
+<li>Direct users to save all data to the file share.</li>
+</ol>
+<h2 id="how-do-i-run-a-startup-script-in-azure-remoteapp">How do I run a startup script in Azure RemoteApp?</h2>
+<p>If you want to run a startup script, start by creating a scheduled task in the template image you are going to use for the collection. (Do this <em>before</em> you run sysprep.) </p>
+<p><img alt="Create a system task" src="../media/remoteapp-upd/upd1.png" /></p>
+<p><img alt="Create a system task that runs when a user logs on" src="../media/remoteapp-upd/upd2.png" /></p>
+<p>On the <strong>General</strong> tab, be sure to change the <strong>User Account</strong> under Security to "BUILTIN\Users."</p>
+<p><img alt="Change the user account to a group" src="../media/remoteapp-upd/upd4.png" /></p>
+<p>The scheduled task will launch your startup script, using the user's credentials. Schedule the task to run every a time a user logs on.</p>
+<p><img alt="Set the trigger for the task as &quot;At log on&quot;" src="../media/remoteapp-upd/upd3.png" /></p>
+<p>You can also use <a href="https://technet.microsoft.com/library/cc779329%28v=ws.10%29.aspx">Group Policy-based startup scripts</a>. </p>
+<h2 id="what-about-placing-a-startup-script-in-the-start-menu-would-that-work">What about placing a startup script in the Start menu? Would that work?</h2>
+<p>In other words, can I create a .bat file that runs a config window script and save it to the c:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp folder, and then have that script run whenever a user starts a RemoteApp session?</p>
+<p>No, that's not supported with Azure RemoteApp, which uses RDSH, which also does not support startup scripts in the Start menu.</p>
+<h2 id="can-i-use-mstscexe-the-remote-desktop-program-to-configure-logon-scripts">Can I use mstsc.exe (the Remote Desktop program) to configure logon scripts?</h2>
+<p>Nope, not supported by Azure RemoteApp.</p>
+<h2 id="can-i-store-data-on-the-vm-locally">Can I store data on the VM locally?</h2>
+<p>NO, data stored anywhere on the VM other than in the UPD will be lost. There is a high chance the user will not get the same VM the next time that they sign into Azure RemoteApp. We do not maintain user-VM persistence, so the user will not sign into the same VM, and the data will be lost. Additionally, when we update the collection, the existing VMs are replaced with a new set of VMs - that means any data stored on the VM itself is lost. The recommendation is to store data in the UPD, shared storage like Azure Files, a file server inside a VNET, or on the cloud using a cloud storage system like DropBox.</p>
+<h2 id="how-do-i-mount-an-azure-file-share-on-a-vm-using-powershell">How do I mount an Azure File share on a VM, using PowerShell?</h2>
+<p>You can use the Net-PSDrive cmdlet to mount the drive, as follows:</p>
+<pre><code>New-PSDrive -Name &lt;drive-name&gt; -PSProvider FileSystem -Root \\&lt;storage-account-name&gt;.file.core.windows.net\&lt;share-name&gt; -Credential :&lt;storage-account-name&gt;
+</code></pre>
+<p>You can also save your credentials by running the following:</p>
+<pre><code>cmdkey /add:&lt;storage-account-name&gt;.file.core.windows.net /user:&lt;storage-account-name&gt; /pass:&lt;storage-account-key&gt;
+</code></pre>
+<p>That lets you skip the -Credential parameter in the New-PSDrive cmdlet.</p>
+              
+               
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span class="prev"><a href="../remoteapp-secureaccess/"><i class="fa fa-angle-left"></i> Previous</a></span>
+      
+      
+        <span class="next"><a href="../remoteapp-clients/">Next <i class="fa fa-angle-right"></i></a></span>
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+</body>
+</html>

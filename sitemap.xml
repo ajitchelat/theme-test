@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>/remoteapp-whatis/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-licensing/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-faq/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-whatsnew/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-roadmap/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/azure-subscription-service-limits/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/remoteapp-anyapp/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-tutorial-o365anywhere/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/remoteapp-appreqs/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-onedrive/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-sql/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-o365/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-outlook/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-appv/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-quickbooks/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-secure/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/remoteapp-collections/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-create-cloud-deployment/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-create-hybrid-deployment/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-update/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-imageoptions/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-images/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-imagereqs/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-uploadimage/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-image-on-azurevm/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/remoteapp-planvnet/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-ports/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-vnet/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-migrate/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/remoteapp-publish/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/remoteapp-user/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-ad/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-changetenant/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-o365user/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-secureaccess/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-upd/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/remoteapp-clients/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-redirection/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-bestpractices/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/remoteapp-tutorial-arawithpowershell/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/automation-manage-remote-app/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/remoteapp-hybridtrouble/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remoteapp-cloudtrouble/</loc>
+     <lastmod>2017-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>

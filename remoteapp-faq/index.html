@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>FAQ - Azure RemoteApp</title>
+  
+
+  <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="../css/override.css" type="text/css" />
+  <link href="../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "FAQ";
+    var mkdocs_page_input_path = "remoteapp-faq.md";
+    var mkdocs_page_url = "/remoteapp-faq/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="../js/extra.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+	<div class="header-top">
+		<div class="header-top-left">
+			<a href="http://www.citrix.com" class="logo-position"><img height="60" src="https://thumbnail-ec2.sharefile.com/thumbnail.aspx?encparams=ypL2J0l-In6gqXJ7yeyKP8A1rqwKMH-C8-nfkJcHJNIN7Y0yZiJsYOcUe-uc0YeZzWLQSFSd1FnuMHPa30XSSINHuGOA8nvvnBT5WmjGlKvd5mxJ4IfT7iTVyHELwhWQiNCznPCiIFyhkA78uKX77PlU2iyhM4YdRM1NKabBe-4wXuiFJsbtAxyJ2UukO_E2ZSf1W3l75Dw8G0zflVkT-EFqyx1zSGId0qzLjm6nzJ8dA9zo-1AJzUisdzmGMzHOq_LMsOWyaalvmcWvCkl-q10GBSbfekfTIFW9LpZNYjkLNSnK8rcwNjWVr_jYayrGjIj2e5dDIMiDj3NRvW51AvHRjxYH9xRRRtY$" target="_blank" class="logo-citrix"><span style="color:#fff;font-size: 20px;position: relative;top:4px;left: 5px">SDK Reference</span></a>
+		</div>
+		<div class="header-top-right">
+			<ul>
+			<!--	<li class="list-inline home"><a href="..">HOME</a></li>
+				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
+				<form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
+            class="searchdocs">
+<a class="fa fa-search errspan"></a></li>
+</form>
+				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
+			</ul>
+
+		</div>
+	</div>
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<i class="fa fa-search"></i>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Overview</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-whatis/">What is Azure RemoteApp?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-licensing/">How does licensing work?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">FAQ</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#azure-remoteapp-faq">Azure RemoteApp FAQ</a></li>
+                
+                    <li><a class="toctree-l4" href="#cant-find-what-youre-looking-for-have-a-question-we-didnt-answer">Can't find what you're looking for? Have a question we didn't answer?</a></li>
+                
+                    <li><a class="toctree-l4" href="#what-is-azure-remoteapp">What is Azure RemoteApp?</a></li>
+                
+                    <li><a class="toctree-l4" href="#quick-tips-on-using-azure-remoteapp">Quick tips on using Azure RemoteApp</a></li>
+                
+                    <li><a class="toctree-l4" href="#azure-remoteapp-subscription-details">Azure RemoteApp subscription details</a></li>
+                
+                    <li><a class="toctree-l4" href="#collections-whats-supported-which-should-you-use-and-others">Collections - what's supported, which should you use, and others</a></li>
+                
+                    <li><a class="toctree-l4" href="#template-images">Template images</a></li>
+                
+                    <li><a class="toctree-l4" href="#network-options">Network options</a></li>
+                
+                    <li><a class="toctree-l4" href="#authentication-options">Authentication options</a></li>
+                
+                    <li><a class="toctree-l4" href="#clients-what-device-can-i-use-to-access-azure-remoteapp">Clients - what device can I use to access Azure RemoteApp?</a></li>
+                
+                    <li><a class="toctree-l4" href="#support-and-feedback">Support and feedback</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-whatsnew/">What's new?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-roadmap/">What's coming?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../azure-subscription-service-limits/">Azure service limits</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Real world scenarios</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-anyapp/">Run any app on any device</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-tutorial-o365anywhere/">Run Office 365 on any device</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Will my app work?</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-appreqs/">App requirements</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-onedrive/">OneDrive for Business</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-sql/">SQL Azure</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-o365/">Office 365</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-outlook/">Outlook 2013</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-appv/">Using App-V apps</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-quickbooks/">QuickBooks on Azure RemoteApp</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-secure/">Secure apps and resources</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Create a RemoteApp collection</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-collections/">Which collection do you need?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-create-cloud-deployment/">Create a cloud collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-create-hybrid-deployment/">Create a hybrid collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-update/">Update your collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-imageoptions/">Create a RemoteApp image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-images/">What is in the template image?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-imagereqs/">Image requirements</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-uploadimage/">Upload an image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-image-on-azurevm/">Create an image from an Azure VM</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Configure a Virtual Network</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-planvnet/">Plan your VNET</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-ports/">Port and URL info</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-vnet/">Validate your VNET</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-migrate/">Migrate to an Azure VNET</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Publish applications</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-publish/">How to publish an app</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Manage Users</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-user/">How to add users</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-ad/">Configure Active Directory</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-changetenant/">Change the Azure AD tenant</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-o365user/">Office 365 user accounts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-secureaccess/">Secure Data</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-upd/">User data</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Client experience</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-clients/">Supported clients</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-redirection/">Configure redirection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-bestpractices/">Client best practices</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Automate RemoteApp</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-tutorial-arawithpowershell/">RemoteApp PowerShell cmdlets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../automation-manage-remote-app/">Manage RemoteApp with Azure Automation</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Troubleshoot</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-hybridtrouble/">Troubleshoot a hybrid collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-cloudtrouble/">Troubleshoot a cloud collection</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+         <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Overview &raquo;</li>
+        
+      
+    
+    <li>FAQ</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main">
+            <div class="section">
+             
+                <p><properties 
+    pageTitle="Azure RemoteApp FAQ | Microsoft Azure" 
+    description="Learn answers to the most frequently asked questions about Azure RemoteApp." 
+    services="remoteapp" 
+    documentationCenter="" 
+    authors="lizap" 
+    manager="swadhwa" 
+    editor=""/></p>
+<p><tags 
+    ms.service="remoteapp" 
+    ms.workload="compute" 
+    ms.tgt_pltfrm="na" 
+    ms.devlang="na" 
+    ms.topic="get-started-article" 
+    ms.date="08/15/2016" 
+    ms.author="elizapo"/></p>
+<h1 id="azure-remoteapp-faq">Azure RemoteApp FAQ</h1>
+<blockquote>
+<p>[AZURE.IMPORTANT]
+Azure RemoteApp is being discontinued. Read the <a href="https://go.microsoft.com/fwlink/?linkid=821148">announcement</a> for details.</p>
+</blockquote>
+<p>We've heard the following questions about Azure RemoteApp. Have others? Visit the <a href="https://social.msdn.microsoft.com/Forums/azure/home?forum=AzureRemoteApp">RemoteApp forums</a> and let us know what you need to know, or drop a comment down below.</p>
+<h2 id="cant-find-what-youre-looking-for-have-a-question-we-didnt-answer">Can't find what you're looking for? Have a question we didn't answer?</h2>
+<p>If you can't find the information you need, or you have an additional question that we're not covering here, please go to the <a href="http://aka.ms/araforum">Azure RemoteApp forum</a> and ask your question there. We can always add more answers here.</p>
+<h2 id="what-is-azure-remoteapp">What is Azure RemoteApp?</h2>
+<ul>
+<li><strong>What is Azure RemoteApp?</strong> RemoteApp is an Azure service helps you provide secure, remote access to applications from many different user devices. Read more  about <a href="../remoteapp-whatis/">Azure RemoteApp</a>.</li>
+<li><strong>What are the deployment options?</strong> There are two kinds of RemoteApp collections: cloud and hybrid. Which one you need depends on a number of factors, like whether you need domain join. We talk about all of those decisions <a href="../remoteapp-collections/">here</a>.</li>
+</ul>
+<h2 id="quick-tips-on-using-azure-remoteapp">Quick tips on using Azure RemoteApp</h2>
+<ul>
+<li><strong>How long until I'm disconnected? How long can I be idle before you give me the boot?</strong> 4 hours. If you or one of your users is idle for 4 hours, you'll be automatically signed out of Azure RemoteApp. Check out the other default settings in <a href="../azure-subscription-service-limits/">Azure Subscription and Service Limits, Quotas, and Constraints</a>.</li>
+<li><strong>Can I try this service for free?</strong> Yes. There is a free trial available for 30 days. After the trial ends, you can transition to a paid account (which you can use in production) or stop using the service. Start your free trial by going to <a href="http://portal.azure.com">portal.azure.com</a> - create a new instance of RemoteApp. With the free trial, you can build 2 instances of RemoteApp with 10 users per instance. Remember that this trial only lives for 30 days.</li>
+</ul>
+<h2 id="azure-remoteapp-subscription-details">Azure RemoteApp subscription details</h2>
+<ul>
+<li><strong>What are the service limits?</strong> You can learn about the default settings and service limits of Azure RemoteApp in <a href="../azure-subscription-service-limits/">Azure Subscription and Service Limits, Quotas, and Constraints</a>. Let us know if you have more questions.</li>
+<li><strong>How many users do I have to have?</strong> There's a minimum of 20 users. Let me repeat that to be super clear - the MINIMUM is 20. You will be billed for 20. </li>
+<li><strong>How much does RemoteApp cost?</strong> Check out <a href="https://azure.microsoft.com/pricing/details/remoteapp/">Azure RemoteApp Pricing Details </a>.</li>
+<li><strong>Does one type of collection cost more than another?</strong> 
+Yes, it can, depending on your collection requirements. A hybrid collection requires a connection from Azure RemoteApp to your on-premises network. If you use an existing VNET/Express Route, there is no additional cost. But if you use a new Azure VNET and either a gateway or Express Route, you will be charged for the <a href="https://azure.microsoft.com/pricing/details/vpn-gateway">VPN gateway</a> or <a href="https://azure.microsoft.com/pricing/details/expressroute/">Express Route</a>. This cost (detailed in the links) is on top of your monthly Azure RemoteApp cost.</li>
+</ul>
+<h2 id="collections-whats-supported-which-should-you-use-and-others">Collections - what's supported, which should you use, and others</h2>
+<ul>
+<li><strong>Are custom line-of-business (LOB) applications supported?</strong> Yes. To use a custom application in Azure RemoteApp, create a <a href="">custom template image</a>, and then upload it to the RemoteApp collection.</li>
+<li><strong>Will my custom LOB application work in Azure RemoteApp?</strong> The best way to figure that out is to test it. Check out the <a href="http://www.rdcompatibility.com/compatibility/default.aspx">RD Compatibility Center</a>.</li>
+<li><strong>Which deployment method (cloud or hybrid) is best for my organization?</strong> Hybrid collections provide the most complete experience if you want full integration with single sign-on (SSO) and secure on-premises network connectivity. Cloud collections provide an agile and easy way to isolate your deployment by using multiple authentication methods. Read more about the <a href="../remoteapp-whatis/">deployment options</a>.</li>
+<li><strong>We have SQL or another database either on-premises or in Azure. Which deployment type should we use?</strong> That depends on where your SQL or backend database is. If the database is in a private network, use the hybrid collection. If the database is exposed to the Internet and allows client connections to connect to it, you can use the cloud collection.</li>
+<li><strong>What about drive mapping, USB and serial port, clipboard sharing, and printer redirection?</strong> All of those features are supported in Azure RemoteApp. Clipboard sharing and printer redirection is enabled by default. You can learn more about redirection <a href="../remoteapp-redirection/">here</a>. </li>
+</ul>
+<h2 id="template-images">Template images</h2>
+<ul>
+<li><strong>Can I use a cloud or existing virtual machine as the template for my RemoteApp collection?</strong> Yes! You can create an image based on an Azure VM, use one of the images included with your subscription, or create a custom image. Check out the <a href="../remoteapp-imageoptions/">RemoteApp image options</a>.</li>
+</ul>
+<h2 id="network-options">Network options</h2>
+<ul>
+<li><strong>The hybrid collection requires a VNET. Can we use our existing VNET?</strong> You can if the existing VNET is an Azure VNET. See "Step 1: Set up your virtual network" in the <a href="../remoteapp-create-hybrid-deployment/">hybrid collection instructions</a> for more information.</li>
+<li><strong>Can I use a VNET with a cloud collection?</strong> Indeed you can. Check out <a href="../remoteapp-create-cloud-deployment/">Create a cloud collection</a>, particularly Step 1, for more information.</li>
+</ul>
+<h2 id="authentication-options">Authentication options</h2>
+<ul>
+<li><strong>How about authentication? Which methods are supported?</strong> The cloud collection supports Microsoft accounts and Azure Active Directory accounts, which are Office 365 accounts as well. The hybrid collection supports only Azure Active Directory accounts that have been synced (using a tool like <a href="http://blogs.technet.com/b/ad/archive/2014/09/16/azure-active-directory-sync-is-now-ga.aspx">Azure Active Directory Sync</a>) from a Windows Server Active Directory deployment; specifically, either synced with the Password Synchronization option or synced with Active Directory Federation Services (AD FS) federation configured. You can also configure <a href="https://azure.microsoft.com/services/multi-factor-authentication/">Multi-Factor Authentication (MFA)</a>.</li>
+</ul>
+<blockquote>
+<p>[AZURE.NOTE]The Azure Active Directory users must be from the tenant that's associated with your subscription. (You can view and modify your subscription on the <strong>Settings</strong> tab in the portal. See <a href="../remoteapp-changetenant/">Change the Azure Active Directory tenant used by RemoteApp</a> for more information.)</p>
+</blockquote>
+<ul>
+<li><strong>Why can't I give my Azure Active Directory account access?</strong> The Azure Active Directory users must be from the directory that's associated with your subscription. You can view or modify that directory on the Settings tab in the portal. See <a href="../remoteapp-changetenant/">Change the Azure Active Directory tenant used by RemoteApp</a> for more information.</li>
+</ul>
+<h2 id="clients-what-device-can-i-use-to-access-azure-remoteapp">Clients - what device can I use to access Azure RemoteApp?</h2>
+<p>You can find good client information, including steps for installing the different clients at <a href="../remoteapp-clients/">Accessing your apps in Azure RemoteApp</a>.</p>
+<ul>
+<li>
+<p><strong>Which devices and operating systems do the client applications support?</strong>
+First, the computers and tablets: </p>
+<ul>
+<li>Windows 10 (client preview)</li>
+<li>Windows 8.1 and Windows 8</li>
+<li>Windows 7 Service Pack 1</li>
+<li>Mac OS X</li>
+<li>Windows RT</li>
+<li>Android tablets</li>
+<li>iPads
+And the phones:</li>
+<li>iPhone</li>
+<li>Android Phone</li>
+<li>Windows Phone</li>
+</ul>
+<p><a href="https://www.remoteapp.windowsazure.com/ClientDownload/AllClients.aspx">Download</a> a RemoteApp client now.
+- <strong>Does Azure RemoteApp support Thin Clients?</strong> Yes, the following Windows Embedded thin clients are supported:
+- Windows Embedded Standard 7
+- Windows Embedded 8 Standard
+- Windows Embedded 8.1 Industry Pro
+- Windows 10 IoT Enterprise</p>
+</li>
+<li>
+<p><strong>Which version of Windows Server is supported for the Remote Desktop Session Host (RDSH)?</strong> Windows Server 2012 R2.</p>
+</li>
+</ul>
+<h2 id="support-and-feedback">Support and feedback</h2>
+<ul>
+<li><strong>What is the support plan for RemoteApp?</strong> Support for billing and subscription management is provided at no cost. Technical support is available through the <a href="https://azure.microsoft.com/support/plans/">Azure service plans</a>. You can also get free community support through our <a href="http://social.msdn.microsoft.com/Forums/windowsazure/home?forum=AzureRemoteApp">Azure discussion forum</a>. </li>
+<li><strong>How do I submit feedback?</strong> Visit the <a href="https://feedback.azure.com/forums/247748-azure-remoteapp/">feedback forum</a>.</li>
+<li><strong>Who can I talk to learn more about Azure RemoteApp?</strong> In addition to our <a href="http://social.msdn.microsoft.com/Forums/windowsazure/home?forum=AzureRemoteApp">discussion forum</a>, which is a great place to post questions, you can join the weekly <a href="https://azureinfo.microsoft.com/US-Azure-WBNR-FY15-11Nov-AzureRemoteAppAskTheExperts-Registration-Page.html">Ask the Experts webinar</a>, where we talk about all things RemoteApp.</li>
+<li>
+<p><strong>What about RemoteApp documentation?</strong> We're so glad you asked. In addition to the help content in the portal help drawer (just click the <strong>?</strong> on any page in the portal), the following articles are available to teach you all about RemoteApp:</p>
+<ul>
+<li><strong>Get started:</strong><ul>
+<li><a href="../remoteapp-whatis/">What is RemoteApp?</a></li>
+<li><a href="../remoteapp-images/">What is in the RemoteApp template images?</a></li>
+<li><a href="../remoteapp-licensing/">How does licensing work?</a></li>
+<li><a href="../remoteapp-o365/">How do RemoteApp and Office work together?</a></li>
+<li><a href="../remoteapp-redirection/">How does redirection work in RemoteApp</a>?</li>
+</ul>
+</li>
+<li><strong>Deploy:</strong><ul>
+<li><a href="">Create a custom template image</a></li>
+<li><a href="../remoteapp-create-hybrid-deployment/">Create a hybrid collection</a></li>
+<li><a href="../remoteapp-create-cloud-deployment/">Create a cloud collection</a></li>
+<li><a href="../remoteapp-ad/">Configure Azure Active Directory for RemoteApp</a></li>
+<li><a href="../remoteapp-publish/">Publish an app in RemoteApp</a></li>
+</ul>
+</li>
+<li><strong>Manage:</strong><ul>
+<li><a href="../remoteapp-user/">Add users</a></li>
+<li><a href="../remoteapp-bestpractices/">Best practices for configuring and using RemoteApp</a>  </li>
+</ul>
+</li>
+</ul>
+<p>Videos! We also have a number of videos about RemoteApp. Some provide introduction (<a href="https://azure.microsoft.com/documentation/videos/cloud-cover-ep-150-azure-remote-app-with-thomas-willingham-and-nihar-namjoshi/">Introduction to Azure RemoteApp</a>) while others walk you through deployment (<a href="https://www.youtube.com/watch?v=3NAv2iwZtGc&amp;feature=youtu.be">Cloud deployment</a> and <a href="https://www.youtube.com/watch?v=GCIMxPUvg0c&amp;feature=youtu.be">Hybrid deployment</a>). Check them out!</p>
+</li>
+</ul>
+<h3 id="help-us-help-you">Help us help you</h3>
+<p>Did you know that in addition to rating this article and making comments down below, you can make changes to the article itself? Something missing? Something wrong? Did I write something that's just confusing? Scroll up and click <strong>Edit on GitHub</strong> to make changes - those will come to us for review, and then, once we sign off on them, you'll see your changes and improvements right here.</p>
+              
+               
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span class="prev"><a href="../remoteapp-licensing/"><i class="fa fa-angle-left"></i> Previous</a></span>
+      
+      
+        <span class="next"><a href="../remoteapp-whatsnew/">Next <i class="fa fa-angle-right"></i></a></span>
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+</body>
+</html>

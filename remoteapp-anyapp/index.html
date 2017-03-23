@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Run any app on any device - Azure RemoteApp</title>
+  
+
+  <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="../css/override.css" type="text/css" />
+  <link href="../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Run any app on any device";
+    var mkdocs_page_input_path = "remoteapp-anyapp.md";
+    var mkdocs_page_url = "/remoteapp-anyapp/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="../js/extra.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+	<div class="header-top">
+		<div class="header-top-left">
+			<a href="http://www.citrix.com" class="logo-position"><img height="60" src="https://thumbnail-ec2.sharefile.com/thumbnail.aspx?encparams=ypL2J0l-In6gqXJ7yeyKP8A1rqwKMH-C8-nfkJcHJNIN7Y0yZiJsYOcUe-uc0YeZzWLQSFSd1FnuMHPa30XSSINHuGOA8nvvnBT5WmjGlKvd5mxJ4IfT7iTVyHELwhWQiNCznPCiIFyhkA78uKX77PlU2iyhM4YdRM1NKabBe-4wXuiFJsbtAxyJ2UukO_E2ZSf1W3l75Dw8G0zflVkT-EFqyx1zSGId0qzLjm6nzJ8dA9zo-1AJzUisdzmGMzHOq_LMsOWyaalvmcWvCkl-q10GBSbfekfTIFW9LpZNYjkLNSnK8rcwNjWVr_jYayrGjIj2e5dDIMiDj3NRvW51AvHRjxYH9xRRRtY$" target="_blank" class="logo-citrix"><span style="color:#fff;font-size: 20px;position: relative;top:4px;left: 5px">SDK Reference</span></a>
+		</div>
+		<div class="header-top-right">
+			<ul>
+			<!--	<li class="list-inline home"><a href="..">HOME</a></li>
+				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
+				<form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
+            class="searchdocs">
+<a class="fa fa-search errspan"></a></li>
+</form>
+				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
+			</ul>
+
+		</div>
+	</div>
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<i class="fa fa-search"></i>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Overview</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-whatis/">What is Azure RemoteApp?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-licensing/">How does licensing work?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-faq/">FAQ</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-whatsnew/">What's new?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-roadmap/">What's coming?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../azure-subscription-service-limits/">Azure service limits</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Real world scenarios</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Run any app on any device</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#run-any-windows-app-on-any-device-with-azure-remoteapp">Run any Windows app on any device with Azure RemoteApp</a></li>
+                
+                    <li><a class="toctree-l4" href="#create-a-collection-in-remoteapp">Create a collection in RemoteApp</a></li>
+                
+                    <li><a class="toctree-l4" href="#share-the-app-with-users">Share the app with users</a></li>
+                
+                    <li><a class="toctree-l4" href="#configure-access-to-access">Configure access to Access</a></li>
+                
+                    <li><a class="toctree-l4" href="#next-steps">Next steps</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-tutorial-o365anywhere/">Run Office 365 on any device</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Will my app work?</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-appreqs/">App requirements</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-onedrive/">OneDrive for Business</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-sql/">SQL Azure</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-o365/">Office 365</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-outlook/">Outlook 2013</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-appv/">Using App-V apps</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-quickbooks/">QuickBooks on Azure RemoteApp</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-secure/">Secure apps and resources</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Create a RemoteApp collection</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-collections/">Which collection do you need?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-create-cloud-deployment/">Create a cloud collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-create-hybrid-deployment/">Create a hybrid collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-update/">Update your collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-imageoptions/">Create a RemoteApp image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-images/">What is in the template image?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-imagereqs/">Image requirements</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-uploadimage/">Upload an image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-image-on-azurevm/">Create an image from an Azure VM</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Configure a Virtual Network</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-planvnet/">Plan your VNET</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-ports/">Port and URL info</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-vnet/">Validate your VNET</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-migrate/">Migrate to an Azure VNET</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Publish applications</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-publish/">How to publish an app</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Manage Users</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-user/">How to add users</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-ad/">Configure Active Directory</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-changetenant/">Change the Azure AD tenant</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-o365user/">Office 365 user accounts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-secureaccess/">Secure Data</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-upd/">User data</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Client experience</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-clients/">Supported clients</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-redirection/">Configure redirection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-bestpractices/">Client best practices</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Automate RemoteApp</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-tutorial-arawithpowershell/">RemoteApp PowerShell cmdlets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../automation-manage-remote-app/">Manage RemoteApp with Azure Automation</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Troubleshoot</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-hybridtrouble/">Troubleshoot a hybrid collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-cloudtrouble/">Troubleshoot a cloud collection</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+         <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Real world scenarios &raquo;</li>
+        
+      
+    
+    <li>Run any app on any device</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main">
+            <div class="section">
+             
+                <p><properties
+   pageTitle="Run any Windows app on any device with Azure RemoteApp | Microsoft Azure"
+   description="Learn how to share any Windows app with your users by using Azure RemoteApp."
+   services="remoteapp"
+   documentationCenter=""
+   authors="lizap"
+   manager="mbaldwin"
+   editor=""/></p>
+<p><tags
+   ms.service="remoteapp"
+   ms.devlang="na"
+   ms.topic="hero-article"
+   ms.tgt_pltfrm="na"
+   ms.workload="compute"
+   ms.date="08/15/2016"
+   ms.author="elizapo"/></p>
+<h1 id="run-any-windows-app-on-any-device-with-azure-remoteapp">Run any Windows app on any device with Azure RemoteApp</h1>
+<blockquote>
+<p>[AZURE.IMPORTANT]
+Azure RemoteApp is being discontinued. Read the <a href="https://go.microsoft.com/fwlink/?linkid=821148">announcement</a> for details.</p>
+</blockquote>
+<p>You can run a Windows application anywhere on any device, right now, seriously - just by using Azure RemoteApp. Whether it's a custom application written 10 years ago, or an Office app, your users no longer have to be tied to a specific operating system (like Windows XP) for those few applications.</p>
+<p>With Azure RemoteApp, your users can also use their own Android or Apple devices and get the same experience they got on Windows (or on Windows Phones). This is accomplished by hosting your Windows application in a collection of Windows virtual machines on Azure - your users can access them from anywhere they have an internet connection. </p>
+<p>Read on for an example of exactly how to do this.</p>
+<p>In this article, we're going to share Access with all of our users. However, you can use ANY app. As long as you can install your app on a Windows Server 2012 R2 computer, you can share it using the steps below. You can review the <a href="../remoteapp-appreqs/">app requirements</a> to make sure your app will work.</p>
+<p>Please note that because Access is a database, and we want that database to be useful, we will be doing a few extra steps to let users access the Access data share. If your app isn't a database, or you don't need your users to be able to access a file share, you can skip those steps in this tutorial</p>
+<blockquote>
+<p>[AZURE.NOTE] <a name="note"></a>You need an Azure account to complete this tutorial:
+- You can <a href="https://azure.microsoft.com/free/?WT.mc_id=A261C142F">open an Azure account for free</a>: You get credits you can use to try out paid Azure services, and even after they're used up you can keep the account and use free Azure services, such as Websites. Your credit card will never be charged, unless you explicitly change your settings and ask to be charged.
+- You can <a href="https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F">activate MSDN subscriber benefits</a>: Your MSDN subscription gives you credits every month that you can use for paid Azure services.</p>
+</blockquote>
+<h2 id="create-a-collection-in-remoteapp">Create a collection in RemoteApp</h2>
+<p>Start by creating a collection. The collection serves as a container for your apps and users. Each collection is based on an image - you can create your own or use one provided with your subscription. For this tutorial, we're using the Office 2013 trial image - it contains the app that we want to share.</p>
+<ol>
+<li>In the Azure portal, scroll down in the left hand nav tree until you see RemoteApp. Open that page.</li>
+<li>Click <strong>Create a RemoteApp collection</strong>.</li>
+<li>Click <strong>Quick create</strong> and enter a name for your collection.</li>
+<li>Select the region you want to use to create your collection. For the best experience, select the region that is closest geographically to the location where your users will access the app. For example, in this tutorial, the users will be located in Redmond, Washington. The closest Azure region is <strong>West US</strong>.</li>
+<li>Select the billing plan you want to use. The basic billing plan puts 16 users on a large Azure VM, while the standard billing plan has 10 users on a large Azure VM. As a general example, the basic plan works great for data entry-type workflow. For a productivity app, like Office, you'd want the standard plan.</li>
+<li>Finally, select the  Office 2013 Professional image. This image contains Office 2013 apps. Just a reminder - this image is only good for trial collections and POCs. You' can't use this image in a production collection.</li>
+<li>Now, click <strong>Create RemoteApp collection</strong>.</li>
+</ol>
+<p><img alt="Create a cloud collection in RemoteApp" src="../media/remoteapp-anyapp/ra-anyappcreatecollection.png" /></p>
+<p>This starts creating your collection, but it can take up to an hour.</p>
+<p>Now you're ready to add your users.</p>
+<h2 id="share-the-app-with-users">Share the app with users</h2>
+<p>Once your collection has been created successfully, it’s time to publish Access to users and add the users who should have access to it.</p>
+<p>If you have navigated away from the Azure RemoteApp node while the collection was being created, start by making your way back to it from the Azure home page.</p>
+<ol>
+<li>Click the collection you created earlier to access additional options and configure the collection.
+<img alt="A new RemoteApp cloud collection" src="../media/remoteapp-anyapp/ra-anyappcollection.png" /></li>
+<li>On the <strong>Publishing</strong> tab, click <strong>Publish</strong> at the bottom of the screen, and then click <strong>Publish Start menu programs</strong>.
+<img alt="Publish a RemoteApp program" src="../media/remoteapp-anyapp/ra-anyapppublish.png" /></li>
+<li>
+<p>Select the apps you want to publish from the list. For our purpose, we chose Access. Click <strong>Complete</strong>. Wait for the apps to finish publishing.
+<img alt="Publishing Access in RemoteApp" src="../media/remoteapp-anyapp/ra-anyapppublishaccess.png" /></p>
+</li>
+<li>
+<p>Once the app has finished publishing, head over to the <strong>User Access</strong> tab to add all the users that need access to your apps. Enter user names (email address) for your users and then click <strong>Save</strong>.</p>
+</li>
+</ol>
+<p><img alt="Add users to RemoteApp" src="../media/remoteapp-anyapp/ra-anyappaddusers.png" /></p>
+<ol>
+<li>Now, it’s time to tell your users about these new apps and how to access them. To do this, send your users an email pointing them to the Remote Desktop client download URL.
+<img alt="The client download URL for RemoteApp" src="../media/remoteapp-anyapp/ra-anyappurl.png" /></li>
+</ol>
+<h2 id="configure-access-to-access">Configure access to Access</h2>
+<p>Some apps need extra configuration after you deploy them through RemoteApp. In particular, for Access, we're going to create a file share on Azure that any user can access. (If you don't want to do that, you can create a <a href="../remoteapp-create-hybrid-deployment/">hybrid collection</a> [instead of our cloud collection] that lets your users access files and information on your local network.) Then, we'll need to tell our users to map a local drive on their computer to the Azure file system.</p>
+<p>The first part you as the admin do. Then, we have some steps for your users.</p>
+<ol>
+<li>Start by publishing the command line interface (cmd.exe). In the <strong>Publishing</strong> tab, select <strong>cmd</strong>, and then click <strong>Publish &gt; Publish program using path</strong>.</li>
+<li>Enter the name of the app and the path. For our purpose, use "File Explorer" as the name and "%SYSTEMDRIVE%\windows\explorer.exe" as the path.
+<img alt="Publish the cmd.exe file." src="../media/remoteapp-anyapp/ra-publishcmd.png" /></li>
+<li>Now you need to create an Azure <a href="">storage account</a>. We named ours "accessstorage," so pick a name that's meaningful to you. (To misquote Highlander, there can be only one "accessstorage.")
+<img alt="Our Azure storage account" src="../media/remoteapp-anyapp/ra-anyappazurestorage.png" /></li>
+<li>Now go back to your dashboard so you can get the path to your storage (endpoint location). You'll use this in a bit, so make sure you copy it somewhere.
+<img alt="The storage account path" src="../media/remoteapp-anyapp/ra-anyappstoragelocation.png" /></li>
+<li>Next, once the storage account has been created, you need the primary access key. Click <strong>Manage access keys</strong>, and then copy the primary access key.</li>
+<li>
+<p>Now, set the context of the storage account and create a new file share for Access. Run the following cmdlets in an elevated Windows PowerShell window:</p>
+<pre><code>$ctx=New-AzureStorageContext &lt;account name&gt; &lt;account key&gt;
+$s = New-AzureStorageShare &lt;share name&gt; -Context $ctx
+</code></pre>
+<p>So for our share, these are the cmdlets we run:</p>
+<pre><code>$ctx=New-AzureStorageContext accessstorage &lt;key&gt;
+$s = New-AzureStorageShare &lt;share name&gt; -Context $ctx
+</code></pre>
+</li>
+</ol>
+<p>Now, it's the user's turn. First, have your users install a <a href="../remoteapp-clients/">RemoteApp client</a>. Next, the users need to map a drive from their account to that Azure file share you created and add their Access files. This is how they do that:</p>
+<ol>
+<li>In the RemoteApp client, access the published apps. Start the cmd.exe program.</li>
+<li>
+<p>Run the following command to map a drive from your computer to the file share:</p>
+<pre><code>net use z: \\&lt;accountname&gt;.file.core.windows.net\&lt;share name&gt; /u:&lt;user name&gt; &lt;account key&gt;
+</code></pre>
+<p>If you set the <strong>/persistent</strong> parameter to yes, the mapped drive will persist across sessions.
+1. Now, launch the File Explorer app from RemoteApp. Copy any Access files you want to use in the shared app to the file share.
+<img alt="Putting Access files in an Azure share" src="../media/remoteapp-anyapp/ra-anyappuseraccess.png" />
+1. Finally, open Access, and then open the database that you just shared. You should see your data in Access running from the cloud.
+<img alt="A real Access database running from the cloud" src="../media/remoteapp-anyapp/ra-anyapprunningaccess.png" /></p>
+</li>
+</ol>
+<p>Now you can use Access on any of your devices - just make sure you install a RemoteApp client.</p>
+<!--Every topic should have next steps and links to the next logical set of content to keep the customer engaged-->
+
+<h2 id="next-steps">Next steps</h2>
+<p>Now that you've mastered creating a collection, try creating a <a href="../remoteapp-tutorial-o365anywhere/">collection that uses Office 365</a>. Or you can create a <a href="../remoteapp-create-hybrid-deployment/">hybrid collection </a>that can access your local network.</p>
+<!--Image references-->
+              
+               
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span class="prev"><a href="../azure-subscription-service-limits/"><i class="fa fa-angle-left"></i> Previous</a></span>
+      
+      
+        <span class="next"><a href="../remoteapp-tutorial-o365anywhere/">Next <i class="fa fa-angle-right"></i></a></span>
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+</body>
+</html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Configure redirection - Azure RemoteApp</title>
+  
+
+  <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="../css/override.css" type="text/css" />
+  <link href="../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Configure redirection";
+    var mkdocs_page_input_path = "remoteapp-redirection.md";
+    var mkdocs_page_url = "/remoteapp-redirection/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="../js/extra.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+	<div class="header-top">
+		<div class="header-top-left">
+			<a href="http://www.citrix.com" class="logo-position"><img height="60" src="https://thumbnail-ec2.sharefile.com/thumbnail.aspx?encparams=ypL2J0l-In6gqXJ7yeyKP8A1rqwKMH-C8-nfkJcHJNIN7Y0yZiJsYOcUe-uc0YeZzWLQSFSd1FnuMHPa30XSSINHuGOA8nvvnBT5WmjGlKvd5mxJ4IfT7iTVyHELwhWQiNCznPCiIFyhkA78uKX77PlU2iyhM4YdRM1NKabBe-4wXuiFJsbtAxyJ2UukO_E2ZSf1W3l75Dw8G0zflVkT-EFqyx1zSGId0qzLjm6nzJ8dA9zo-1AJzUisdzmGMzHOq_LMsOWyaalvmcWvCkl-q10GBSbfekfTIFW9LpZNYjkLNSnK8rcwNjWVr_jYayrGjIj2e5dDIMiDj3NRvW51AvHRjxYH9xRRRtY$" target="_blank" class="logo-citrix"><span style="color:#fff;font-size: 20px;position: relative;top:4px;left: 5px">SDK Reference</span></a>
+		</div>
+		<div class="header-top-right">
+			<ul>
+			<!--	<li class="list-inline home"><a href="..">HOME</a></li>
+				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
+				<form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
+            class="searchdocs">
+<a class="fa fa-search errspan"></a></li>
+</form>
+				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
+			</ul>
+
+		</div>
+	</div>
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<i class="fa fa-search"></i>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Overview</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-whatis/">What is Azure RemoteApp?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-licensing/">How does licensing work?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-faq/">FAQ</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-whatsnew/">What's new?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-roadmap/">What's coming?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../azure-subscription-service-limits/">Azure service limits</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Real world scenarios</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-anyapp/">Run any app on any device</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-tutorial-o365anywhere/">Run Office 365 on any device</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Will my app work?</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-appreqs/">App requirements</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-onedrive/">OneDrive for Business</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-sql/">SQL Azure</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-o365/">Office 365</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-outlook/">Outlook 2013</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-appv/">Using App-V apps</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-quickbooks/">QuickBooks on Azure RemoteApp</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-secure/">Secure apps and resources</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Create a RemoteApp collection</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-collections/">Which collection do you need?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-create-cloud-deployment/">Create a cloud collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-create-hybrid-deployment/">Create a hybrid collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-update/">Update your collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-imageoptions/">Create a RemoteApp image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-images/">What is in the template image?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-imagereqs/">Image requirements</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-uploadimage/">Upload an image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-image-on-azurevm/">Create an image from an Azure VM</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Configure a Virtual Network</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-planvnet/">Plan your VNET</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-ports/">Port and URL info</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-vnet/">Validate your VNET</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-migrate/">Migrate to an Azure VNET</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Publish applications</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-publish/">How to publish an app</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Manage Users</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-user/">How to add users</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-ad/">Configure Active Directory</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-changetenant/">Change the Azure AD tenant</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-o365user/">Office 365 user accounts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-secureaccess/">Secure Data</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-upd/">User data</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Client experience</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-clients/">Supported clients</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Configure redirection</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#using-redirection-in-azure-remoteapp">Using redirection in Azure RemoteApp</a></li>
+                
+                    <li><a class="toctree-l4" href="#what-redirection-is-enabled-by-default">What redirection is enabled by default?</a></li>
+                
+                    <li><a class="toctree-l4" href="#what-other-redirection-is-available">What other redirection is available?</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-your-redirection-settings-in-remoteapp">Change your redirection settings in RemoteApp</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-usb-redirection-settings-on-your-windows-client">Change USB redirection settings on your Windows client</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-bestpractices/">Client best practices</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Automate RemoteApp</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-tutorial-arawithpowershell/">RemoteApp PowerShell cmdlets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../automation-manage-remote-app/">Manage RemoteApp with Azure Automation</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Troubleshoot</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-hybridtrouble/">Troubleshoot a hybrid collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-cloudtrouble/">Troubleshoot a cloud collection</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+         <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Client experience &raquo;</li>
+        
+      
+    
+    <li>Configure redirection</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main">
+            <div class="section">
+             
+                <p><properties
+    pageTitle="Using redirection in Azure RemoteApp | Microsoft Azure"
+    description="Learn how to configure and use redirection in RemoteApp"
+    services="remoteapp"
+    documentationCenter=""
+    authors="lizap"
+    manager="mbaldwin" /></p>
+<p><tags
+    ms.service="remoteapp"
+    ms.workload="compute"
+    ms.tgt_pltfrm="na"
+    ms.devlang="na"
+    ms.topic="article"
+    ms.date="08/15/2016"
+    ms.author="elizapo" /></p>
+<h1 id="using-redirection-in-azure-remoteapp">Using redirection in Azure RemoteApp</h1>
+<blockquote>
+<p>[AZURE.IMPORTANT]
+Azure RemoteApp is being discontinued. Read the <a href="https://go.microsoft.com/fwlink/?linkid=821148">announcement</a> for details.</p>
+</blockquote>
+<p>Device redirection lets your users interact with remote apps using the devices attached to their local computer, phone, or tablet. For example, if you have provided Skype through Azure RemoteApp, your user needs the camera installed on their PC to work with Skype. This is also true for printers, speakers, monitors, and a range of USB-connected peripherals.</p>
+<p>RemoteApp leverages the Remote Desktop Protocol (RDP) and RemoteFX to provide redirection.</p>
+<h2 id="what-redirection-is-enabled-by-default">What redirection is enabled by default?</h2>
+<p>When you use RemoteApp, the following redirections are enabled by default. The information in parentheses show the RDP setting.</p>
+<ul>
+<li>Play sounds on the local computer (<strong>Play on this computer</strong>). (audiomode:i:0)</li>
+<li>Capture audio from the local computer and send to the remote computer (<strong>Record from this computer</strong>). (audiocapturemode:i:1)</li>
+<li>Print to local printers (redirectprinters:i:1)</li>
+<li>COM ports (redirectcomports:i:1)</li>
+<li>Smart card device (redirectsmartcards:i:1)</li>
+<li>Clipboard (ability to copy and paste) (redirectclipboard:i:1)</li>
+<li>Clear type font smoothing (allow font smoothing:i:1)</li>
+<li>Redirect all supported Plug and Play devices. (devicestoredirect:s:*)</li>
+</ul>
+<h2 id="what-other-redirection-is-available">What other redirection is available?</h2>
+<p>Two redirection options are disabled by default:</p>
+<ul>
+<li>Drive redirection (drive mapping): Your local computer's drives become mapped drives in the remote session. This lets you save or open files from your local drives while you work in the remote session.</li>
+<li>USB redirection: You can use the USB devices attached to your local computer within the remote session.</li>
+</ul>
+<h2 id="change-your-redirection-settings-in-remoteapp">Change your redirection settings in RemoteApp</h2>
+<p>You can change the device redirection settings for a collection by using the Microsoft Azure PowerShell with SDK. After you install the new PowerShell and SDK, first configure it to manage your subscription as described in <a href="">How to install and configure Azure PowerShell</a>.</p>
+<p>Then use a command similar to the following to set the custom RDP properties:</p>
+<pre><code>Set-AzureRemoteAppCollection -CollectionName &lt;collection name&gt;  -CustomRdpProperty "drivestoredirect:s:*`nusbdevicestoredirect:s:*"
+</code></pre>
+<p>(Note that <em>`n</em> is used as a delimiter between individual properties.)</p>
+<p>To get a list of what custom RDP properties are configured, run the following cmdlet. Note that only custom properties are shown as output results and not the default properties:  </p>
+<pre><code>Get-AzureRemoteAppCollection -CollectionName &lt;collection name&gt;
+</code></pre>
+<p>When you set custom properties you must specify all custom properties each time; otherwise the setting reverts to disabled.   </p>
+<h3 id="common-examples">Common examples</h3>
+<p>Use the following cmdlet to enable drive redirection:  </p>
+<pre><code>Set-AzureRemoteAppCollection -CollectionName &lt;collection name&gt;  -CustomRdpProperty "drivestoredirect:s:*”
+</code></pre>
+<p>Use this cmdlet to enable both USB and Drive redirection:</p>
+<pre><code>Set-AzureRemoteAppCollection -CollectionName &lt;collection name&gt;  -CustomRdpProperty "drivestoredirect:s:*`nusbdevicestoredirect:s:*"
+</code></pre>
+<p>Use this cmdlet to disable clipboard sharing:  </p>
+<pre><code>Set-AzureRemoteAppCollection -CollectionName &lt;collection name&gt;  -CustomRdpProperty "redirectclipboard:i:0”
+</code></pre>
+<blockquote>
+<p>[AZURE.IMPORTANT] Be sure to completely log off all users in the collection (and not just disconnect them) before you test the change. To ensure users are completely logged off, go to the <strong>Sessions</strong> tab in the collection in the Azure portal and log off any users who are disconnected or signed in. Sometimes it can take several seconds for the local drives to show in Explorer within the session.</p>
+</blockquote>
+<h2 id="change-usb-redirection-settings-on-your-windows-client">Change USB redirection settings on your Windows client</h2>
+<p>If you want to use USB redirection on a computer that connects to RemoteApp, there are 2 actions that need to happen. 1 - Your administrator needs to enable USB redirection at the collection level by using Azure PowerShell. 2 - On each device where you want to use USB redirection, you need to enable a group policy that permits it. This step will need to be done for each user that wants to use USB redirection.</p>
+<blockquote>
+<p>[AZURE.NOTE] USB redirection with Azure RemoteApp is only supported for Windows computers.</p>
+</blockquote>
+<h3 id="enable-usb-redirection-for-the-remoteapp-collection">Enable USB redirection for the RemoteApp collection</h3>
+<p>Use the following cmdlet to enable USB redirection at the collection level:</p>
+<pre><code>Set-AzureRemoteAppCollection -CollectionName &lt;collection_name&gt; -CustomRdpProperty "nusbdevicestoredirect:s:*"
+</code></pre>
+<h3 id="enable-usb-redirection-for-the-client-computer">Enable USB redirection for the client computer</h3>
+<p>To configure USB redirection settings on your computer:</p>
+<ol>
+<li>Open the Local Group Policy Editor (GPEDIT.MSC). (Run gpedit.msc from a command prompt.)</li>
+<li>Open <strong>Computer Configuration\Policies\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Connection Client\RemoteFX USB Device Redirection</strong>.</li>
+<li>Double-click <strong>Allow RDP redirection of other supported RemoteFX USB devices from this computer</strong>.</li>
+<li>Select <strong>Enabled</strong>, and then select <strong>Administrators and Users in the RemoteFX USB Redirection Access Rights</strong>.</li>
+<li>Open a command prompt with administrative permissions, and run the following command:<pre><code>gpupdate /force
+</code></pre>
+<ol>
+<li>Restart the computer.</li>
+</ol>
+</li>
+</ol>
+<p>You can also use the Group Policy Management tool to create and apply the USB redirection policy for all computers in your domain:</p>
+<ol>
+<li>Log into the domain controller as the domain administrator.</li>
+<li>Open the Group Policy Management Console. (Click <strong>Start &gt; Administrative Tools &gt; Group Policy Management</strong>.)</li>
+<li>Navigate to the domain or organizational unit for which you want to create the policy.</li>
+<li>Right-click <strong>Default Domain Policy</strong>, and then click <strong>Edit</strong>.</li>
+<li>Open <strong>Computer Configuration\Policies\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Connection Client\RemoteFX USB Device Redirection</strong>.</li>
+<li>Double-click <strong>Allow RDP redirection of other supported RemoteFX USB devices from this computer</strong>.</li>
+<li>Select <strong>Enabled</strong>, and then select <strong>Administrators and Users in the RemoteFX USB Redirection Access Rights</strong>.</li>
+<li>Click <strong>OK</strong>.  </li>
+</ol>
+              
+               
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span class="prev"><a href="../remoteapp-clients/"><i class="fa fa-angle-left"></i> Previous</a></span>
+      
+      
+        <span class="next"><a href="../remoteapp-bestpractices/">Next <i class="fa fa-angle-right"></i></a></span>
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+</body>
+</html>

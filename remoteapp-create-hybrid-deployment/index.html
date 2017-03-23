@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Create a hybrid collection - Azure RemoteApp</title>
+  
+
+  <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="../css/override.css" type="text/css" />
+  <link href="../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Create a hybrid collection";
+    var mkdocs_page_input_path = "remoteapp-create-hybrid-deployment.md";
+    var mkdocs_page_url = "/remoteapp-create-hybrid-deployment/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="../js/extra.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+	<div class="header-top">
+		<div class="header-top-left">
+			<a href="http://www.citrix.com" class="logo-position"><img height="60" src="https://thumbnail-ec2.sharefile.com/thumbnail.aspx?encparams=ypL2J0l-In6gqXJ7yeyKP8A1rqwKMH-C8-nfkJcHJNIN7Y0yZiJsYOcUe-uc0YeZzWLQSFSd1FnuMHPa30XSSINHuGOA8nvvnBT5WmjGlKvd5mxJ4IfT7iTVyHELwhWQiNCznPCiIFyhkA78uKX77PlU2iyhM4YdRM1NKabBe-4wXuiFJsbtAxyJ2UukO_E2ZSf1W3l75Dw8G0zflVkT-EFqyx1zSGId0qzLjm6nzJ8dA9zo-1AJzUisdzmGMzHOq_LMsOWyaalvmcWvCkl-q10GBSbfekfTIFW9LpZNYjkLNSnK8rcwNjWVr_jYayrGjIj2e5dDIMiDj3NRvW51AvHRjxYH9xRRRtY$" target="_blank" class="logo-citrix"><span style="color:#fff;font-size: 20px;position: relative;top:4px;left: 5px">SDK Reference</span></a>
+		</div>
+		<div class="header-top-right">
+			<ul>
+			<!--	<li class="list-inline home"><a href="..">HOME</a></li>
+				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
+				<form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
+            class="searchdocs">
+<a class="fa fa-search errspan"></a></li>
+</form>
+				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
+			</ul>
+
+		</div>
+	</div>
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<i class="fa fa-search"></i>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Overview</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-whatis/">What is Azure RemoteApp?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-licensing/">How does licensing work?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-faq/">FAQ</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-whatsnew/">What's new?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-roadmap/">What's coming?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../azure-subscription-service-limits/">Azure service limits</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Real world scenarios</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-anyapp/">Run any app on any device</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-tutorial-o365anywhere/">Run Office 365 on any device</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Will my app work?</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-appreqs/">App requirements</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-onedrive/">OneDrive for Business</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-sql/">SQL Azure</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-o365/">Office 365</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-outlook/">Outlook 2013</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-appv/">Using App-V apps</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-quickbooks/">QuickBooks on Azure RemoteApp</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-secure/">Secure apps and resources</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Create a RemoteApp collection</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-collections/">Which collection do you need?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-create-cloud-deployment/">Create a cloud collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Create a hybrid collection</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#how-to-create-a-hybrid-collection-for-azure-remoteapp">How to create a hybrid collection for Azure RemoteApp</a></li>
+                
+                    <li><a class="toctree-l4" href="#step-1-set-up-your-virtual-network">Step 1: Set up your virtual network</a></li>
+                
+                    <li><a class="toctree-l4" href="#step-2-create-an-azure-remoteapp-collection">Step 2: Create an Azure RemoteApp collection</a></li>
+                
+                    <li><a class="toctree-l4" href="#step-3-link-your-collection-to-the-local-domain">Step 3: Link your collection to the local domain</a></li>
+                
+                    <li><a class="toctree-l4" href="#step-4-link-to-an-azure-remoteapp-image">Step 4: Link to an Azure RemoteApp image</a></li>
+                
+                    <li><a class="toctree-l4" href="#step-5-configure-active-directory-directory-synchronization">Step 5: Configure Active Directory directory synchronization</a></li>
+                
+                    <li><a class="toctree-l4" href="#step-6-publish-apps">Step 6: Publish apps</a></li>
+                
+                    <li><a class="toctree-l4" href="#step-7-configure-user-access">Step 7: Configure user access</a></li>
+                
+                    <li><a class="toctree-l4" href="#next-steps">Next steps</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-update/">Update your collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-imageoptions/">Create a RemoteApp image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-images/">What is in the template image?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-imagereqs/">Image requirements</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-uploadimage/">Upload an image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-image-on-azurevm/">Create an image from an Azure VM</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Configure a Virtual Network</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-planvnet/">Plan your VNET</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-ports/">Port and URL info</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-vnet/">Validate your VNET</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-migrate/">Migrate to an Azure VNET</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Publish applications</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-publish/">How to publish an app</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Manage Users</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-user/">How to add users</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-ad/">Configure Active Directory</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-changetenant/">Change the Azure AD tenant</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-o365user/">Office 365 user accounts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-secureaccess/">Secure Data</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-upd/">User data</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Client experience</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-clients/">Supported clients</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-redirection/">Configure redirection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-bestpractices/">Client best practices</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Automate RemoteApp</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-tutorial-arawithpowershell/">RemoteApp PowerShell cmdlets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../automation-manage-remote-app/">Manage RemoteApp with Azure Automation</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Troubleshoot</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-hybridtrouble/">Troubleshoot a hybrid collection</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../remoteapp-cloudtrouble/">Troubleshoot a cloud collection</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+         <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Create a RemoteApp collection &raquo;</li>
+        
+      
+    
+    <li>Create a hybrid collection</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main">
+            <div class="section">
+             
+                <p><properties
+    pageTitle="How to create a hybrid collection for Azure RemoteApp | Microsoft Azure"
+    description="Learn how to create a deployment of RemoteApp that connects to your internal network."
+    services="remoteapp"
+    documentationCenter=""
+    authors="lizap"
+    manager="mbaldwin"
+    editor=""/></p>
+<p><tags
+    ms.service="remoteapp"
+    ms.workload="compute"
+    ms.tgt_pltfrm="na"
+    ms.devlang="na"
+    ms.topic="article"
+    ms.date="08/15/2016"
+    ms.author="elizapo"/></p>
+<h1 id="how-to-create-a-hybrid-collection-for-azure-remoteapp">How to create a hybrid collection for Azure RemoteApp</h1>
+<blockquote>
+<p>[AZURE.IMPORTANT]
+Azure RemoteApp is being discontinued. Read the <a href="https://go.microsoft.com/fwlink/?linkid=821148">announcement</a> for details.</p>
+</blockquote>
+<p>There are two kinds of Azure RemoteApp collections:</p>
+<ul>
+<li>Cloud: resides completely in Azure. You can choose to save all data in the cloud (so a cloud-only collection) or to connect your collection to a VNET and save data there.   </li>
+<li>Hybrid: includes a virtual network for on-premises access - this requires the use of Azure AD and an on-premises Active Directory environment.</li>
+</ul>
+<p>Don't know which you need? Check out <a href="../remoteapp-collections/">Which kind of collection do you need for Azure RemoteApp</a>.</p>
+<p>This tutorial walks you through the process of creating a hybrid collection. There are eight steps:</p>
+<ol>
+<li>Decide what <a href="../remoteapp-imageoptions/">image</a> to use for your collection. You can create a custom image or use one of the Microsoft images included with your subscription.</li>
+<li>Set up your virtual network. Check out the <a href="../remoteapp-planvnet/">VNET planning</a> and <a href="">sizing</a> information.</li>
+<li>Create a collection.</li>
+<li>Join your collection to your local domain.</li>
+<li>Add a template image to your collection.</li>
+<li>Configure directory synchronization. Azure RemoteApp requires that you integrate with Azure Active Directory by either 1) configuring Azure Active Directory Sync with the Password Sync option, or 2) configuring Azure Active Directory Sync without the Password Sync option but using a domain that is federated to AD FS. Check out the <a href="../remoteapp-ad/">configuration info for Active Directory with RemoteApp</a>.</li>
+<li>Publish RemoteApp apps.</li>
+<li>Configure user access.</li>
+</ol>
+<p><strong>Before you begin</strong></p>
+<p>You need to do the following before creating the collection:</p>
+<ul>
+<li><a href="https://azure.microsoft.com/services/remoteapp/">Sign up</a> for Azure RemoteApp.</li>
+<li>Create a user account in Active Directory to use as the Azure RemoteApp service account. Restrict the permissions for this account so that it can only join machines to the domain.</li>
+<li>Gather information about your on-premises network: IP address information and VPN device details.</li>
+<li>Install the <a href="">Azure PowerShell</a> module.</li>
+<li>Gather information about the users that you want to grant access to. You will need the Azure Active Directory user principal name (for example, name@contoso.com) for each user. Make sure that the UPN matches between Azure AD and Active Directory.</li>
+<li>Choose your template image. An Azure RemoteApp template image contains the apps and programs that you want to publish for your users. See <a href="../remoteapp-imageoptions/">Azure RemoteApp image options</a> for more information.</li>
+<li>Want to use the Office 365 ProPlus image? Check out info <a href="">here</a>.</li>
+<li><a href="../remoteapp-ad/">Configure Active Directory for RemoteApp</a>.</li>
+</ul>
+<h2 id="step-1-set-up-your-virtual-network">Step 1: Set up your virtual network</h2>
+<p>You can deploy a hybrid collection that uses an existing Azure virtual network, or you can create a new virtual network. A virtual network lets your users access data on your local network through RemoteApp remote resources. Using an Azure virtual network gives your collection direct network access to other Azure services and virtual machines deployed to that virtual network.</p>
+<p>Make sure you review the <a href="../remoteapp-planvnet/">VNET planning</a> and <a href="">VNET size</a> information before you create your VNET.</p>
+<h3 id="create-an-azure-vnet-and-join-it-to-your-active-directory-deployment">Create an Azure VNET and join it to your Active Directory deployment</h3>
+<p>Start by creating a <a href="">virtual network</a>. This is done on the <strong>Network</strong> tab in the Azure portal. You need to connect your virtual network to the Active Directory deployment that is synchronized to your Azure Active Directory tenant.</p>
+<p>See <a href="">Create a virtual network using the Azure portal</a> for more information.</p>
+<h3 id="make-sure-your-virtual-network-is-ready-for-azure-remoteapp">Make sure your virtual network is ready for Azure RemoteApp</h3>
+<p>Before you create your collection, let's make sure that your new virtual network is ready. You can validate this by doing the following:</p>
+<ol>
+<li>Create an Azure virtual machine inside the subnet of the virtual network you just created for RemoteApp.</li>
+<li>Use Remote Desktop to connect to the virtual machine. (Click <strong>Connect</strong>.)</li>
+<li>Join it to the same Active Directory deployment that you want to use for RemoteApp.</li>
+</ol>
+<p>Did that work? Your virtual network and subnet are ready for Azure RemoteApp!</p>
+<p>You can find more information about creating Azure virtual machines and connecting to them with Remote Desktop <a href="https://msdn.microsoft.com/library/azure/jj156003.aspx">here</a>.</p>
+<h2 id="step-2-create-an-azure-remoteapp-collection">Step 2: Create an Azure RemoteApp collection</h2>
+<ol>
+<li>In the <a href="http://manage.windowsazure.com">Azure portal</a>, go to the Azure RemoteApp page.</li>
+<li>Click <strong>New &gt; Create with VNET</strong>.</li>
+<li>Enter a name for your collection.</li>
+<li>Choose the plan that you want to use - standard or basic.</li>
+<li>Choose your VNET from the drop down list and then your subnet.</li>
+<li>Choose to join it to your domain.</li>
+<li>Click <strong>Create RemoteApp collection</strong>.</li>
+</ol>
+<p>After your Azure RemoteApp collection has been created, double-click the name of the collection. That will bring up the <strong>Quick Start</strong> page - this is where you finish configuring the collection.</p>
+<p>Did something go wrong? Check out the <a href="../remoteapp-hybridtrouble/">hybrid collection troubleshooting information</a>.</p>
+<h2 id="step-3-link-your-collection-to-the-local-domain">Step 3: Link your collection to the local domain</h2>
+<ol>
+<li>On the <strong>Quick Start</strong> page, click <strong>join a local domain</strong>.</li>
+<li>
+<p>Add the Azure RemoteApp service account to your local Active Directory domain. You will need the domain name, organizational unit, service account user name and password.</p>
+<p>This is the information you gathered if you followed the steps in <a href="../remoteapp-ad/">Configure Active Directory for Azure RemoteApp</a>.</p>
+</li>
+</ol>
+<h2 id="step-4-link-to-an-azure-remoteapp-image">Step 4: Link to an Azure RemoteApp image</h2>
+<p>An Azure RemoteApp template image contains the programs that you want to share with users. You can either create a new <a href="../remoteapp-imageoptions/">template image</a> or link to an existing image (one already imported or uploaded to Azure RemoteApp). You can also link to one of the Azure RemoteApp <a href="../remoteapp-images/">template images</a> that contain Office 365 or Office 2013 (for trial use) programs.</p>
+<p>If you are uploading the new image, you need to enter the name and choose the location for the image. On the next page of the wizard, you'll see a set of PowerShell cmdlets - copy and run these cmdlets from an elevated Windows PowerShell prompt to upload the specified image.</p>
+<p>If you are linking to an existing template image, simply specify the image name, location, and associated Azure subscription.</p>
+<h2 id="step-5-configure-active-directory-directory-synchronization">Step 5: Configure Active Directory directory synchronization</h2>
+<p>Azure RemoteApp requires that you integrate with Azure Active Directory by either 1) configuring Azure Active Directory Sync with the Password Sync option, or 2) configuring Azure Active Directory Sync without the Password Sync option but using a domain that is federated to AD FS.</p>
+<p>Check out <a href="https://blogs.technet.microsoft.com/enterprisemobility/2014/08/04/connecting-ad-and-azure-ad-only-4-clicks-with-azure-ad-connect/">AD Connect</a> - this article helps you set up directory integration in 4 steps.</p>
+<p>See <a href="http://msdn.microsoft.com//library/azure/hh967642.aspx">Directory synchronization roadmap</a> for planning information and detailed steps.</p>
+<h2 id="step-6-publish-apps">Step 6: Publish apps</h2>
+<p>An Azure RemoteApp app is the app or program that you provide to your users. It is located in the template image you uploaded for the collection. When a user accesses an app, it appears to run in their local environment, but it is really running in Azure.</p>
+<p>Before your users can access apps, you need to publish them – this lets your users access the apps through the Remote Desktop client.</p>
+<p>You can publish multiple apps to your collection. From the publishing page, click <strong>Publish</strong> to add an app. You can either publish from the <strong>Start</strong> menu of the template image or by specifying the path on the template image for the app. If you choose to add from the <strong>Start</strong> menu, choose the program to add. If you choose to provide the path to the app, provide a name for the app and the path to where it is installed on the template image.</p>
+<h2 id="step-7-configure-user-access">Step 7: Configure user access</h2>
+<p>Now that you have created your collection, you need to add the users that you want to be able to use your remote resources. The users that you provide access to need to exist in the Active Directory tenant associated with the subscription you used to create this Azure RemoteApp collection.</p>
+<ol>
+<li>From the Quick Start page, click <strong>Configure user access</strong>.</li>
+<li>
+<p>Enter the work account (from Active Directory) or Microsoft account that you want to grant access for.</p>
+<p><strong>Notes:</strong></p>
+<p>Make sure that you use the “user@domain.com” format.</p>
+<p>If you are using Office 365 ProPlus in your collection, you must use the Active Directory identities for your users. This helps validate licensing.</p>
+</li>
+<li>
+<p>Once the users are validated, click <strong>Save</strong>.</p>
+</li>
+</ol>
+<h2 id="next-steps">Next steps</h2>
+<p>That's it - you have successfully created and deployed your Azure RemoteApp hybrid collection. The next step is to have your users download and install the Remote Desktop client. You can find the URL for the client on the Azure RemoteApp Quick Start page. Then, have users log into the client and access the apps you published.</p>
+<h3 id="help-us-help-you">Help us help you</h3>
+<p>Did you know that in addition to rating this article and making comments down below, you can make changes to the article itself? Something missing? Something wrong? Did I write something that's just confusing? Scroll up and click <strong>Edit on GitHub</strong> to make changes - those will come to us for review, and then, once we sign off on them, you'll see your changes and improvements right here.</p>
+              
+               
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span class="prev"><a href="../remoteapp-create-cloud-deployment/"><i class="fa fa-angle-left"></i> Previous</a></span>
+      
+      
+        <span class="next"><a href="../remoteapp-update/">Next <i class="fa fa-angle-right"></i></a></span>
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+</body>
+</html>
